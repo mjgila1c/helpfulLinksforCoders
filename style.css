@@ -11,18 +11,20 @@ p {
 } 
 
 li {
+    font-size: 15px;
     font-family: 'Tmes New Roman', Times, serif;
 }
 
 
 a:link {
-    color: black; 
+    font-size: 16px;
+    color: purple; 
     background-color: transparent; 
     text-decoration: none;
 }
 
  a:visited {
-    color: pink;
+    color: green;
     background-color: transparent;
    text-decoration: none;
 }
