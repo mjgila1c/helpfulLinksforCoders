@@ -8,7 +8,7 @@ h3 {
 }
 p {
     color: red;
-} 
+}
 
 li {
     font-size: 15px;
@@ -19,8 +19,8 @@ li {
 
 a:link {
     font-size: 16px;
-    color: purple; 
-    background-color: transparent; 
+    color: purple;
+    background-color: transparent;
     text-decoration: none;
 }
 
@@ -40,4 +40,9 @@ a:active {
     color: yellow;
     background-color: transparent;
    text-decoration: underline;
+}
+
+iframe {
+  float: none;
+  border-radius: 1.5em;
 }
