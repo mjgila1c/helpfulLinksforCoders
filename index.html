@@ -40,14 +40,20 @@
      //    the player should play for six seconds and then stop.
      var done = false;
      function onPlayerStateChange(event) {
-       if (event.data == YT.PlayerState.PLAYING && !done) {
-         setTimeout(stopVideo, 20000);
-         done = true;
+       // if (event.data == YT.PlayerState.PLAYING && !done) {
+       //   setTimeout(stopVideo, 20000);
+       //   done = true;
+       // }
+       if (event.data == YT.PlayerState.ENDED) {
+         //event.target.a will have ID to access DOM
+         //set style to hide
+         event.target.a.css({'hide'});
+
        }
      }
-     function stopVideo() {
-       player.stopVideo();
-     }
+     // function stopVideo() {
+     //   player.stopVideo();
+     // }
    </script>
 
     <h2>Links, Websites and other Resouces</h2>
@@ -80,7 +86,10 @@
       <li><a href="https://caniuse.com/#home" class="references" rel="external">Can I Use __________ ?</a>: "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.</li>
 
     </ul>
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

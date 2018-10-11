@@ -14,6 +14,8 @@
 // });
 
 const $secureLinks = $('a[href^="https://"]');
+const $nonscureLinks = $('a[href^="http://"]');
 
 
-$secureLinks.attr('target', 'blank');
+$secureLinks.attr('target', '_blank');
+$nonscureLinks.attr('target', '_blank');
