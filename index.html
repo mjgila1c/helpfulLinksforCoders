@@ -4,6 +4,51 @@
       <link rel='stylesheet' href="style.css">
     </head>
     <body>
+      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+   <div id="player"></div>
+
+   <script>
+     // 2. This code loads the IFrame Player API code asynchronously.
+     var tag = document.createElement('script');
+
+     tag.src = "https://www.youtube.com/iframe_api";
+     var firstScriptTag = document.getElementsByTagName('script')[0];
+     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+     // 3. This function creates an <iframe> (and YouTube player)
+     //    after the API code downloads.
+     var player;
+     function onYouTubeIframeAPIReady() {
+       player = new YT.Player('player', {
+         height: '390',
+         width: '680',
+         videoId: 'M7lc1UVf-VE',
+         events: {
+           'onReady': onPlayerReady,
+           'onStateChange': onPlayerStateChange
+         }
+       });
+     }
+
+     // 4. The API will call this function when the video player is ready.
+     function onPlayerReady(event) {
+       event.target.playVideo();
+     }
+
+     // 5. The API calls this function when the player's state changes.
+     //    The function indicates that when playing a video (state=1),
+     //    the player should play for six seconds and then stop.
+     var done = false;
+     function onPlayerStateChange(event) {
+       if (event.data == YT.PlayerState.PLAYING && !done) {
+         setTimeout(stopVideo, 20000);
+         done = true;
+       }
+     }
+     function stopVideo() {
+       player.stopVideo();
+     }
+   </script>
 
     <h2>Links, Websites and other Resouces</h2>
 
@@ -28,7 +73,7 @@
 
       <li><a href="https://opensource.guide/how-to-contribute/#why-contribute-to-open-source" class="github" rel="external">How to Contribute to Open Source: GitHub </a>: Want to contribute to open source? A guide to making open source contributions, for first-timers and for veterans.</li>
 
-      <li><a href="https://aws.amazon.com/getting-started/use-cases/" class="learningPath" rel="external">AWS Resource Center </a>: From core concepts to beginner tutorials, find the information you need to start building on AWS.</li><iframe width="335" height="180" src="https://www.youtube.com/embed/0i3fUOtyKa8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <li><a href="https://aws.amazon.com/getting-started/use-cases/" class="learningPath" rel="external">AWS Resource Center </a>: From core concepts to beginner tutorials, find the information you need to start building on AWS.</li><iframe id="AWS-vid" width="480" height="270" src="https://www.youtube.com/embed/0i3fUOtyKa8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
       <li><a href="https://aws.amazon.com/getting-started/use-cases/" class="learningPath" rel="external">AWS: 10-min Tutorials</a>: Get started with a simple “Hello, World!” tutorial to get hands-on with an AWS product.</li>
 

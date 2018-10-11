@@ -8,7 +8,7 @@
 //   listItems.textContent = listItems.textContent.toLowerCase();
 // });
 
-$('#iframe').click(function(){
-  width="500";
-  height="300"
+$('#AWS-vid').click(function(event){
+  console.log;
+  break;
 });
