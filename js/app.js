@@ -8,7 +8,12 @@
 //   listItems.textContent = listItems.textContent.toLowerCase();
 // });
 
-$('#AWS-vid').click(function(event){
-  console.log;
-  break;
-});
+// $('#AWS-vid').click(function(event){
+//   console.log;
+//   break;
+// });
+
+const $secureLinks = $('a[href^="https://"]');
+
+
+$secureLinks.attr('target', 'blank');
