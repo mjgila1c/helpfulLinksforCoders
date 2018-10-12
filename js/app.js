@@ -13,7 +13,16 @@
 //   break;
 // });
 
+<<<<<<< HEAD
 // const $secureLinks = $('a[href^="https://"]');
 
 
 // $secureLinks.attr('target', 'blank');
+=======
+const $secureLinks = $('a[href^="https://"]');
+const $nonscureLinks = $('a[href^="http://"]');
+
+
+$secureLinks.attr('target', '_blank');
+$nonscureLinks.attr('target', '_blank');
+>>>>>>> f2da693da3d272308b18113ab2cf469dfc6a1de1
