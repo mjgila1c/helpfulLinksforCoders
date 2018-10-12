@@ -13,7 +13,7 @@
 //   break;
 // });
 
-const $secureLinks = $('a[href^="https://"]');
+// const $secureLinks = $('a[href^="https://"]');
 
 
-$secureLinks.attr('target', 'blank');
+// $secureLinks.attr('target', 'blank');
