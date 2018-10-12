@@ -1,159 +1,164 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <link rel='stylesheet' href="style.css">
+      <link rel='stylesheet' href="css/style.css">
+      <link rel="stylesheet" href="css/flexbox.css">
     </head>
-    <body>
-      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+   <body>
+        <!--1. The <iframe> (and video player) will replace this <div> tag. -->
    <div id="player"></div>
 
-   <script>
-     // 2. This code loads the IFrame Player API code asynchronously.
-     var tag = document.createElement('script');
-
-     tag.src = "https://www.youtube.com/iframe_api";
-     var firstScriptTag = document.getElementsByTagName('script')[0];
-     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-     // 3. This function creates an <iframe> (and YouTube player)
-     //    after the API code downloads.
-     var player;
-     function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-         height: '390',
-         width: '680',
-         videoId: 'M7lc1UVf-VE',
-         events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-         }
-       });
-     }
-
-     // 4. The API will call this function when the video player is ready.
-     function onPlayerReady(event) {
-       event.target.playVideo();
-     }
-
-     // 5. The API calls this function when the player's state changes.
-     //    The function indicates that when playing a video (state=1),
-     //    the player should play for six seconds and then stop.
-     var done = false;
-     function onPlayerStateChange(event) {
-        // if (event.data == YT.PlayerState.PLAYING && !done) {
-        //   setTimeout(stopVideo, 6000);
-        //   done = true;
-        // }
-       if (event.data == YT.PlayerState.ENDED) {
-         //event.target.a will have ID to access DOM
-         //set style to hide
-         event.target.a.
-
-       }
-     }
-     // function stopVideo() {
-     //   player.stopVideo();
-     // }
-   </script>
-
+   <!--    <script>-->
+   <!--      // 2. This code loads the IFrame Player API code asynchronously.-->
+   <!--      var tag = document.createElement('script');-->
+    
+   <!--      tag.src = "https://www.youtube.com/iframe_api";-->
+   <!--      var firstScriptTag = document.getElementsByTagName('script')[0];-->
+   <!--      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);-->
+    
+   <!--      // 3. This function creates an <iframe> (and YouTube player)-->
+   <!--      //    after the API code downloads.-->
+   <!--      var player;-->
+   <!--      function onYouTubeIframeAPIReady() {-->
+   <!--       player = new YT.Player('player', {-->
+   <!--          height: '390',-->
+   <!--          width: '680',-->
+   <!--          videoId: 'M7lc1UVf-VE',-->
+   <!--          events: {-->
+   <!--           'onReady': onPlayerReady,-->
+   <!--           'onStateChange': onPlayerStateChange-->
+   <!--          }-->
+   <!--        });-->
+   <!--      }-->
+    
+   <!--      // 4. The API will call this function when the video player is ready.-->
+   <!--      function onPlayerReady(event) {-->
+   <!--        event.target.playVideo();-->
+   <!--      }-->
+    
+   <!--      // 5. The API calls this function when the player's state changes.-->
+   <!--      //    The function indicates that when playing a video (state=1),-->
+   <!--      //    the player should play for six seconds and then stop.-->
+   <!--      var done = false;-->
+   <!--      function onPlayerStateChange(event) {-->
+   <!--         // if (event.data == YT.PlayerState.PLAYING && !done) {-->
+   <!--         //   setTimeout(stopVideo, 6000);-->
+   <!--         //   done = true;-->
+   <!--         // }-->
+   <!--     //   if (event.data == YT.PlayerState.ENDED) {-->
+   <!--     //      //event.target.a will have ID to access DOM-->
+   <!--     //      //set style to hide-->
+   <!--     //      event.target.a.-->
+    
+   <!--        }-->
+         
+   <!--       function stopVideo() {-->
+   <!--         player.stopVideo();-->
+   <!--       }-->
+   <!--</script>-->
+    
+    <header>
     <h2>Links, Websites and other Resouces</h2>
 
     <h4>Links for Computer Programming Basic Understanding</h4>
+    </header>
 
-    <ul>
-      <li>
-          <a class="practice" href="https://engineering.videoblocks.com/web-architecture-101-a3224e126947">Web Architecture 101</a>: The basic
-          architecture concepts to help to have a high level understand how websites are built.
-          <p>This helped me alot</p>
-         </li>
+  
+    <div class="container">
 
-      <li>
-          <a class="github" href="https://www.firsttimersonly.com/">First Timers Only </a>: Friendly Open Source Projects should reserve specific issues for newbies.
-          <p>something something</p>  
-         </li>
-
-      <li>
-          <a class="github" href="https://www.atlassian.com/git?utm_source=basic-git-commands&utm_medium=link&utm_campaign=git-microsite&_ga=2.173819875.1588753143.1538978694-1993520312.1537220850">Getting Git Right </a>: Atlassian Git Tutorials for a visual introduction to Git commands and workflows, including examples.
-          <p>something something</p>  
-        </li>
-
-      <li>
-          <a class="github" href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html">Basic Git commands</a>: List of some basic Git commands to get you going with Git.
-          <p>something something</p>  
-        </li>
-
-      <li>
-          <a class="practice" href="https://www.w3schools.com/">w3schools.com </a>: Staight forward tutorials, references and examples to help people learn CS languages for buidling web pages and other programs
-          <p>something something</p>  
-        </li>
-
-      <li>
-          <a class="learningPath" href="https://mva.microsoft.com/LearningPaths.aspx/">MVA - Learning Paths</a>: Learning paths are curated courses brought to you by Microsoft Virtual Academy (MVA) to help you increase your proficiency in the latest technologies. Build valuable skills through video tutorials, demos, assessments, and more. Plus, earn MVA badges for completed learning paths, and share them through email or social media, such as LinkedIn, Twitter, and Facebook. Get started today! 
-          <p>something something</p>
-        </li>
-
-      <li>
-          <a class="testPrep" href="http://meli-lewis.github.io/GRE_Khan.html/">GRE Test Prep: Khan Academy  </a>: Blog on how to prepare for GRE exam by using Khan Academy website training modules
-          <p>something something</p>
-         </li>
-
-      <li>
-          <a class="github" href="https://opensource.guide/how-to-contribute/#why-contribute-to-open-source">How to Contribute to Open Source: GitHub </a>: Want to contribute to open source? A guide to making open source contributions, for first-timers and for veterans.
-          <p>something something</p>
-        </li>
-
-      <li>
-          <a class="learningPath" href="https://aws.amazon.com/getting-started/use-cases/">AWS Resource Center </a>: From core concepts to beginner tutorials, find the information you need to start building on AWS.
-            
-            <iframe id="AWS-vid" width="480" height="270" src="https://www.youtube.com/embed/0i3fUOtyKa8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            </iframe>
-            <p>something something</p>
-         </li>
-
-      <li>
-             <a class="learningPath" href="https://aws.amazon.com/getting-started/use-cases/">AWS: 10-min Tutorials</a>: Get started with a simple Hello, World! tutorial to get hands-on with an AWS product.
-             <p>something something</p>            
-        </li>
-
-      <li>
-          <a class="references"  href="https://caniuse.com/#home" rel="external">Can I Use __________ ?</a>: "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
-           <p>something something</p>
-        </li>
-        
-      <li>
-          <a class="---" href="https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44">Itnext.io Blog</a>: How to understand asynchronous JS code in a less painful way.
-           <p>something something</p>
-      </li>
-      
-      <li>
-          <a class="practice" href="https://www.hackerrank.com/">HackerRanker</a>: A technology hiring platform that is the standard for assessing developer skills for over 1,000 companies around the world.
-          
-          <p>Good resource to actually start practice algorithms and various concepts. Many companies use this platform for testing in the interview process. It is nice because it has "tracks" that allow you to hone and develop skills around various core CS concepts. I like the interface and the ability to focus the challenges on specific skill sets. (Ross Davis)
-          </p>
-          
-      </li>
-      
-      <li>
-          <a class="practice" href="https://www.codecademy.com/">Codecademy</a>: Great interactive online learning resource for most of the major languages in modern software.
-          <p>I have yet to use this but looks like a great resource</p>
-      </li>
-      
-      <li>
-          <a class="practice" href="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/">CS50's Introduction to Computer Science</a>: Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.
-          <p> Highly Recommend, if you have the time. This is the live actual Harvard Intro to computer science class and it is FREE. You are actually taking the class and watching the live streamed lectures, you have homework and projects, and access to the actual Harvard TAs. What really makes the course is the instructor though, David Malan, top notch CS professor. This a well known and well regarded into to CS. When I took the class it was based around the C programming language, it is now based around Python, which is much more relevant to modern programming. Recommend. (Ross Davis)
-          </p>
-          
-          <p> Again, Ross Davis comments... however I've taken these courses and it demistified some of the fog of being a newbie computer programmer
-          </p>
-      </li>
-      
-      
+        <ul>
+          <li class="practice">
+              <a  href="https://engineering.videoblocks.com/web-architecture-101-a3224e126947">Web Architecture 101</a>: The basic
+              architecture concepts to help to have a high level understand how websites are built.
+              <p>This helped me alot</p>
+             </li>
     
-    </ul>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+          <li class="github">
+              <a  href="https://www.firsttimersonly.com/">First Timers Only </a>: Friendly Open Source Projects should reserve specific issues for newbies.
+              <p>something something</p>  
+             </li>
+    
+          <li class="github">
+              <a href="https://www.atlassian.com/git?utm_source=basic-git-commands&utm_medium=link&utm_campaign=git-microsite&_ga=2.173819875.1588753143.1538978694-1993520312.1537220850">Getting Git Right </a>: Atlassian Git Tutorials for a visual introduction to Git commands and workflows, including examples.
+              <p>something something</p>  
+            </li>
+    
+          <li class="github">
+              <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html">Basic Git commands</a>: List of some basic Git commands to get you going with Git.
+              <p>something something</p>  
+            </li>
+    
+          <li class="practice">
+              <a  href="https://www.w3schools.com/">w3schools.com </a>: Staight forward tutorials, references and examples to help people learn CS languages for buidling web pages and other programs
+              <p>something something</p>  
+            </li>
+    
+          <li class="learningPath">
+              <a  href="https://mva.microsoft.com/LearningPaths.aspx/">MVA - Learning Paths</a>: Learning paths are curated courses brought to you by Microsoft Virtual Academy (MVA) to help you increase your proficiency in the latest technologies. Build valuable skills through video tutorials, demos, assessments, and more. Plus, earn MVA badges for completed learning paths, and share them through email or social media, such as LinkedIn, Twitter, and Facebook. Get started today! 
+              <p>something something</p>
+            </li>
+    
+          <li class="testPrep">
+              <a href="http://meli-lewis.github.io/GRE_Khan.html/">GRE Test Prep: Khan Academy  </a>: Blog on how to prepare for GRE exam by using Khan Academy website training modules
+              <p>something something</p>
+             </li>
+    
+          <li class="github">
+              <a  href="https://opensource.guide/how-to-contribute/#why-contribute-to-open-source">How to Contribute to Open Source: GitHub </a>: Want to contribute to open source? A guide to making open source contributions, for first-timers and for veterans.
+              <p>something something</p>
+            </li>
+    
+          <li class="learningPath">
+              <a  href="https://aws.amazon.com/getting-started/use-cases/">AWS Resource Center </a>: From core concepts to beginner tutorials, find the information you need to start building on AWS.
+                
+                <iframe id="AWS-vid" width="480" height="270" src="https://www.youtube.com/embed/0i3fUOtyKa8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+                <p>something something</p>
+             </li>
+    
+          <li class="learningPath" >
+                 <a href="https://aws.amazon.com/getting-started/use-cases/">AWS: 10-min Tutorials</a>: Get started with a simple Hello, World! tutorial to get hands-on with an AWS product.
+                 <p>something something</p>            
+            </li>
+    
+          <li class="references">
+              <a  href="https://caniuse.com/#home" rel="external">Can I Use __________ ?</a>: "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+               <p>something something</p>
+            </li>
+            
+          <li class="---">
+              <a  href="https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44">Itnext.io Blog</a>: How to understand asynchronous JS code in a less painful way.
+               <p>something something</p>
+          </li>
+          
+          <li class="practice" >
+              <a href="https://www.hackerrank.com/">HackerRanker</a>: A technology hiring platform that is the standard for assessing developer skills for over 1,000 companies around the world.
+              
+              <p>Good resource to actually start practice algorithms and various concepts. Many companies use this platform for testing in the interview process. It is nice because it has "tracks" that allow you to hone and develop skills around various core CS concepts. I like the interface and the ability to focus the challenges on specific skill sets. (Ross Davis)
+              </p>
+              
+          </li>
+          
+          <li class="practice">
+              <a  href="https://www.codecademy.com/">Codecademy</a>: Great interactive online learning resource for most of the major languages in modern software.
+              <p>I have yet to use this but looks like a great resource</p>
+          </li>
+          
+          <li class="practice">
+              <a  href="https://courses.edx.org-v1:HarvardX+CS50+X/course/">CS50's Introduction to Computer Science</a>: Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.
+              <p> Highly Recommend, if you have the time. This is the live actual Harvard Intro to computer science class and it is FREE. You are actually taking the class and watching the live streamed lectures, you have homework and projects, and access to the actual Harvard TAs. What really makes the course is the instructor though, David Malan, top notch CS professor. This a well known and well regarded into to CS. When I took the class it was based around the C programming language, it is now based around Python, which is much more relevant to modern programming. Recommend. (Ross Davis)
+              </p>
+              
+              <p> Again, Ross Davis comments... however I've taken these courses and it demistified some of the fog of being a newbie computer programmer
+              </p>
+          </li>
+    
+        </ul>
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </div>
 </body>
 </html>

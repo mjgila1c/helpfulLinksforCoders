@@ -1,14 +1,25 @@
 
+/* ================================= 
+  Page Styles
+==================================== */
+
 body {
-    background-color: lightgrey;
+	font-size: 1.35em;
+	font-family: 'Varela Round', sans-serif;
+	color: NULL;
+	background: lightgrey;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 h3 {
     color: blue;
 }
+
 p {
+    float: none;
     color: red;
-    font: italic;
+    font: ;
 }
 
 li {
@@ -46,4 +57,12 @@ a:active {
 iframe {
   float: none;
   border-radius: 1.5em;
+}
+
+.container {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 45px auto;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 }
