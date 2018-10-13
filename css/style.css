@@ -6,7 +6,6 @@
 body {
 	font-size: 1.35em;
 	font-family: 'Varela Round', sans-serif;
-	color: NULL;
 	background: lightgrey;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -17,10 +16,13 @@ h3 {
 }
 
 p {
-    float: none;
-    color: red;
-    font: ;
-}
+    font-style: italic;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    color: Plum;
+ 
+
+} 
 
 li {
     font-size: 15px;
@@ -36,7 +38,7 @@ a:link {
     text-decoration: none;
 }
 
- a:visited {
+a:visited {
     color: green;
     background-color: transparent;
    text-decoration: none;

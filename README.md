@@ -1,4 +1,4 @@
-# helpfulLinks-Info
+# Helpful Links for Coders
 
 
 <h2> Helpful Repos, Links, blogs and other training platforms to help learn to coding </h2>

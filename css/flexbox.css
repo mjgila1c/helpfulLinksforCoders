@@ -4,11 +4,20 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-arround;
 }
 
 .github {
   order: -1;
+}
+
+.practice {
+  order: 2;
+}
+
+.iframe {
+  flex-basis: fit-content;
 }
 
 
