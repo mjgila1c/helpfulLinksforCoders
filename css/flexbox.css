@@ -8,16 +8,11 @@
   justify-content: space-arround;
 }
 
-.github {
-  order: -1;
+div {
+  flex-grow: 1;
+  flex-basis: 100px;
 }
 
-.practice {
-  order: 2;
-}
 
-.iframe {
-  flex-basis: fit-content;
-}
 
 
