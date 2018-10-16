@@ -13,6 +13,8 @@
 //   break;
 // });
 
+
+
 const $secureLinks = $('a[href^="https://"]');
 const $nonscureLinks = $('a[href^="http://"]');
 
