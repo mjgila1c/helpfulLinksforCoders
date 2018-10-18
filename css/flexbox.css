@@ -12,7 +12,3 @@ div {
   flex-grow: 1;
   flex-basis: 100px;
 }
-
-img {
-  flex-basis: 15px;
-}
