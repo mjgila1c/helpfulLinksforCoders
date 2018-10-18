@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 
     <title>Helpful Links for Coders</title>
     <link rel='stylesheet' href="css/style.css">
@@ -22,60 +23,11 @@
   </body>
 </html>
 
-  <!-- <html>
-  <!-- code for creating a YouTube video that can stop on command -->
-   <!-- <body>
-        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-   <!-- <div id="player"></div> -->
+  <HTML>
+<!-- YT video control -->
 
-   <!--    <script>-->
-   <!--      // 2. This code loads the IFrame Player API code asynchronously.-->
-   <!--      var tag = document.createElement('script');-->
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 
-   <!--      tag.src = "https://www.youtube.com/iframe_api";-->
-   <!--      var firstScriptTag = document.getElementsByTagName('script')[0];-->
-   <!--      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);-->
-
-   <!--      // 3. This function creates an <iframe> (and YouTube player)-->
-   <!--      //    after the API code downloads.-->
-   <!--      var player;-->
-   <!--      function onYouTubeIframeAPIReady() {-->
-   <!--       player = new YT.Player('player', {-->
-   <!--          height: '390',-->
-   <!--          width: '680',-->
-   <!--          videoId: 'M7lc1UVf-VE',-->
-   <!--          events: {-->
-   <!--           'onReady': onPlayerReady,-->
-   <!--           'onStateChange': onPlayerStateChange-->
-   <!--          }-->
-   <!--        });-->
-   <!--      }-->
-
-   <!--      // 4. The API will call this function when the video player is ready.-->
-   <!--      function onPlayerReady(event) {-->
-   <!--        event.target.playVideo();-->
-   <!--      }-->
-
-   <!--      // 5. The API calls this function when the player's state changes.-->
-   <!--      //    The function indicates that when playing a video (state=1),-->
-   <!--      //    the player should play for six seconds and then stop.-->
-   <!--      var done = false;-->
-   <!--      function onPlayerStateChange(event) {-->
-   <!--         // if (event.data == YT.PlayerState.PLAYING && !done) {-->
-   <!--         //   setTimeout(stopVideo, 6000);-->
-   <!--         //   done = true;-->
-   <!--         // }-->
-   <!--     //   if (event.data == YT.PlayerState.ENDED) {-->
-   <!--     //      //event.target.a will have ID to access DOM-->
-   <!--     //      //set style to hide-->
-   <!--     //      event.target.a.-->
-
-   <!--        }-->
-
-   <!--       function stopVideo() {-->
-   <!--         player.stopVideo();-->
-   <!--       }-->
-   <!--</script>-->
 
 <body>
 
@@ -107,7 +59,7 @@
 
   <div class="container" id=github> <!-- div class for GitHub Resources -->
     <!-- about github container-->
-      <img src="img/githubLogo.png" class="mb-1 img-fluid rounded">
+      <img src="img/githubLogo.png" class="center" style="width: 15rem">
       <ul style="list-style: none;">
       <div class="row" id="firstTimersOnly">
         <!-- about: webiste First Timers Only  -->
@@ -122,6 +74,50 @@
         </div><!-- / website info -->
       </div><!--- / about -->
 
+      <!-- YT Video fadeOut fucntion -->
+      <div class="center">
+        <div id="player"></div>
+
+        <button style="display: none;" onclick="openYT()" id="YTbutton">Replay video</button>
+        <script>
+        function openYT(){
+            $("#player").fadeIn();
+        }
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: '0i3fUOtyKa8',
+            events: {
+              onReady: onPlayerReady,
+              onStateChange: onPlayerStateChange
+            }
+          });
+        }
+
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+        function onPlayerStateChange(event) {
+          if(event.data === 0){
+            $("#player").fadeOut();
+            $("#YTbutton").fadeIn();
+          }
+        }
+        </script>
+      </div>
+      <!-- /YT Video fadeOut fucntion -->
+
       <div class="row" id="gettingGitRight"> <!--- about: website Getting Git Right -->
         <div class="col-md"> <!--- website information -->
           <li class="github">
@@ -129,7 +125,7 @@
               <span>Atlassian Git Tutorials for a visual introduction to Git commands and workflows, including examples.</span>
           </li>
         </div> <!--- / website information -->
-          <div class="col-md ml-3 mt-4"> <!--- Notes -->
+          <div class="col-md ml-4 mt-4"> <!--- Notes -->
             <p>something something</p>
           </div> <!---/ Notes -->
       </div> <!--- / about -->
@@ -140,7 +136,7 @@
               <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"><h5>Basic Git Commands</h5></a>
               <span>List of some basic Git commands to get you going with Git.</span>
           </div> <!--- / website information -->
-          <div class="col-md m-3 mt-4"> <!--- Notes -->
+          <div class="col-md m-2 mt-4"> <!--- Notes -->
             <p>something something</p>
           </div> <!---/ Notes -->
       </div> <!--- / about -->
@@ -184,7 +180,7 @@
           <!--- website information -->
           <li class="github">
             <h5>
-              <a href="https://github.com/civicdata/training-kit">Github On Demand Training</a>
+              <a href="https://services.github.com/on-demand/">Github On Demand Training</a>
             </h5>
             <span>This repository contains the completely open source on-demand training hosted at
               <a href="https://services.github.com/on-demand/">https://services.github.com/on-demand/</a>. These

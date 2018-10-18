@@ -1,0 +1,40 @@
+
+.navbar .navbar-brand {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.jumbotron {
+  background-image: url('../img/scrolling_HTML_code.png');
+  background-size: cover;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.col-md {
+  min-width: 200px;
+}
+
+/********************************************************
+    Media Queries
+**********************************************************  */
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { .
+
+  .. }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
