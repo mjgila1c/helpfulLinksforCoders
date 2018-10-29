@@ -57,24 +57,9 @@
   </div>
   <!-- /Jumbotron -->
 
-  <div class="container" id=github> <!-- div class for GitHub Resources -->
-    <!-- about github container-->
-      <img src="img/githubLogo.png" class="center" style="width: 15rem">
-      <ul style="list-style: none;">
-      <div class="row" id="firstTimersOnly">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md mr-3"> <!--website info -->
-          <li class="github"><a href="https://www.firsttimersonly.com/"><h5>First Timers Only</h5> </a>
-            <span>Friendly Open Source Projects should reserve specific issues for newbies.</span>
-          </li>
-        </div>
-        <div class="col-md ml-2 mt-4">
-          <!-- Notes about the website  -->
-          <p>something something</p>
-        </div><!-- / website info -->
-      </div><!--- / about -->
 
       <!-- YT Video fadeOut fucntion -->
+
       <div class="center">
         <div id="player"></div>
 
@@ -108,7 +93,7 @@
         function onPlayerReady(event) {
           event.target.playVideo();
         }
-        function onPlayerStateChange(event) {
+        // function onPlayerStateChange(event) { <!--pause video -->
           if(event.data === 0){
             $("#player").fadeOut();
             $("#YTbutton").fadeIn();
@@ -117,6 +102,23 @@
         </script>
       </div>
       <!-- /YT Video fadeOut fucntion -->
+
+  <div class="container" id=github> <!-- div class for GitHub Resources -->
+    <!-- image github container-->
+    <img src="img/githubLogo.png" class="center" style="width: 15rem">
+    <ul style="list-style: none;">
+      <div class="row" id="firstTimersOnly">
+        <!-- about: webiste First Timers Only  -->
+        <div class="col-md mr-3"> <!--website info -->
+          <li class="github"><a href="https://www.firsttimersonly.com/"><h5>First Timers Only</h5> </a>
+            <span>Friendly Open Source Projects should reserve specific issues for newbies.</span>
+          </li>
+        </div>   <!-- / website info -->
+        <div class="col-md ml-2 mt-4">
+          <!-- Notes about the website  -->
+          <p>something something</p>
+        </div><!-- / notes website info -->
+      </div><!--- / about -->
 
       <div class="row" id="gettingGitRight"> <!--- about: website Getting Git Right -->
         <div class="col-md"> <!--- website information -->
@@ -194,6 +196,7 @@
         </div>
         <!---/ Notes -->
       </div>
+
       <div class="row" id="learngitbranching">
         <!--- about: website  -->
         <div class="col-md">
@@ -217,16 +220,49 @@
         <!---/ Notes -->
       </div>
      </ul>
-  </div>
-  <!--/ github container -->
-  </div><!--/ github container -->
+  </div>  <!--/ github container -->
+
+  <div class="container" id=practice> <!-- div class for practice Resources -->
+    <!-- image practice container-->
+    <img src="img/practiceMakesPerfect.jpg" class="center" style="width: 15rem">
+    <ul style="list-style: none;">
+      <div class="row" id="hackerrank">
+        <!-- about: webiste First Timers Only  -->
+        <div class="col-md mr-3"> <!--website info -->
+          <li class="practice" >
+            <a href="https://www.hackerrank.com/"><h5>HackerRanker</h5></a>
+            <span>A technology hiring platform that is the standard for assessing developer skills for over 1,000 companies around the world.</span>
+          </li>
+        </div>   <!-- / website info -->
+        <div class="col-md ml-2 mt-4">
+          <!-- Notes about the website  -->
+          <p>Good resource to actually start practice algorithms and various concepts. Many companies use this platform for testing in the interview process. It is nice because it has "tracks" that allow you to hone and develop skills around various core CS concepts. I like the interface and the ability to focus the challenges on specific skill sets. (Ross Davis)
+          </p>
+        </div><!-- / notes website info -->
+      </div><!--- / about -->
+  </div>  <!-- /div class for github resources -->
+
+
+  <li class="practice">
+    <a  href="https://www.codecademy.com/">Codecademy</a>: Great interactive online learning resource for most of the major languages in modern software.
+    <p>I have yet to use this but looks like a great resource</p>
+  </li>
+
+  <li class="practice">
+    <a  href="https://courses.edx.org-v1:HarvardX+CS50+X/course/">CS50's Introduction to Computer Science</a>: Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.
+
+    <p> Highly Recommend, if you have the time. This is the live actual Harvard Intro to computer science class and it is FREE. You are actually taking the class and watching the live streamed lectures, you have homework and projects, and access to the actual Harvard TAs. What really makes the course is the instructor though, David Malan, top notch CS professor. This a well known and well regarded into to CS. When I took the class it was based around the C programming language, it is now based around Python, which is much more relevant to modern programming. Recommend. (Ross Davis)
+    </p>
+
+    <p> Again, Ross Davis comments... however I've taken these courses and it demistified some of the fog of being a newbie computer programmer
+    </p>
+  </li>
 
 </body><!--- / container -->
 
-  <div class="container">
-  <!-- about -->
-</div><!--- / about -->
-<body><!--- / contdainer -->
+
+  <!-- INWORK ITEMS -->
+<body>
 
 
 
@@ -278,29 +314,6 @@
           <li class="---">
               <a  href="https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44">Itnext.io Blog</a>: How to understand asynchronous JS code in a less painful way.
                <p>something something</p>
-          </li>
-
-          <li class="practice" >
-              <a href="https://www.hackerrank.com/">HackerRanker</a>: A technology hiring platform that is the standard for assessing developer skills for over 1,000 companies around the world.
-
-              <p>Good resource to actually start practice algorithms and various concepts. Many companies use this platform for testing in the interview process. It is nice because it has "tracks" that allow you to hone and develop skills around various core CS concepts. I like the interface and the ability to focus the challenges on specific skill sets. (Ross Davis)
-              </p>
-
-          </li>
-
-          <li class="practice">
-              <a  href="https://www.codecademy.com/">Codecademy</a>: Great interactive online learning resource for most of the major languages in modern software.
-              <p>I have yet to use this but looks like a great resource</p>
-          </li>
-
-          <li class="practice">
-              <a  href="https://courses.edx.org-v1:HarvardX+CS50+X/course/">CS50's Introduction to Computer Science</a>: Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.
-
-              <p> Highly Recommend, if you have the time. This is the live actual Harvard Intro to computer science class and it is FREE. You are actually taking the class and watching the live streamed lectures, you have homework and projects, and access to the actual Harvard TAs. What really makes the course is the instructor though, David Malan, top notch CS professor. This a well known and well regarded into to CS. When I took the class it was based around the C programming language, it is now based around Python, which is much more relevant to modern programming. Recommend. (Ross Davis)
-              </p>
-
-              <p> Again, Ross Davis comments... however I've taken these courses and it demistified some of the fog of being a newbie computer programmer
-              </p>
           </li>
 
         </ul>
