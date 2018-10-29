@@ -67,6 +67,7 @@
         <script>
         function openYT(){
             $("#player").fadeIn();
+
         }
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -93,7 +94,7 @@
         function onPlayerReady(event) {
           event.target.playVideo();
         }
-        // function onPlayerStateChange(event) { <!--pause video -->
+        function onPlayerStateChange(event) {
           if(event.data === 0){
             $("#player").fadeOut();
             $("#YTbutton").fadeIn();
@@ -240,13 +241,35 @@
           </p>
         </div><!-- / notes website info -->
       </div><!--- / about -->
+
+      <div class="row" id="codecademy">
+        <!-- about: webiste First Timers Only  -->
+        <div class="col-md mr-3"> <!--website info -->
+          <li class="practice" >
+            <a  href="https://www.codecademy.com/"><h5>Codecademy</h5></a><span> Great interactive online learning resource for most of the major languages in modern software.</span>
+          </li>
+        </div>   <!-- / website info -->
+        <div class="col-md ml-2 mt-4">
+          <!-- Notes about the website  -->
+          <p>I have yet to use this but looks like a great resource</p>
+        </div><!-- / notes website info -->
+      </div><!--- / about -->
+
+      <div class="row" id="codecademy">
+        <!-- about: webiste First Timers Only  -->
+        <div class="col-md mr-3"> <!--website info -->
+          <li class="practice" >
+            <a  href="https://www.codecademy.com/"><h5>Codecademy</h5></a><span> Great interactive online learning resource for most of the major languages in modern software.</span>
+          </li>
+        </div>   <!-- / website info -->
+        <div class="col-md ml-2 mt-4">
+          <!-- Notes about the website  -->
+          <p>I have yet to use this but looks like a great resource</p>
+        </div><!-- / notes website info -->
+      </div><!--- / about -->
+
   </div>  <!-- /div class for github resources -->
 
-
-  <li class="practice">
-    <a  href="https://www.codecademy.com/">Codecademy</a>: Great interactive online learning resource for most of the major languages in modern software.
-    <p>I have yet to use this but looks like a great resource</p>
-  </li>
 
   <li class="practice">
     <a  href="https://courses.edx.org-v1:HarvardX+CS50+X/course/">CS50's Introduction to Computer Science</a>: Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.
