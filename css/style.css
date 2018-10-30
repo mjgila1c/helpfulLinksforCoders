@@ -1,5 +1,5 @@
 
-/* ================================= 
+/* =================================
   Page Styles
 ==================================== */
 
@@ -20,9 +20,9 @@ p {
     font-family: "Montserrat", serif;
     font-size: 18px;
     color: Plum;
- 
 
-} 
+
+}
 
 li {
     font-size: 15px;
@@ -71,4 +71,8 @@ iframe {
 
 h5 > a:link {
     font-size:1.25rem;
+}
+
+nav-item.nav-link:hover{
+	color: red;
 }

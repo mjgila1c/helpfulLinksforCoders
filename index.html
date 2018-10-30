@@ -33,14 +33,14 @@
 
   <!-- Nav Bar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-  <a class="navbar-brand order-1" href="#"><strong>Helpful Links</strong></a>
+  <a class="navbar-brand order-1" href="#jumbotron"><strong>Helpful Links</strong></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="#github">GitHub <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#practice">Practice <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">Pricing</a>
       <a class="nav-item nav-link" href="#">Disabled</a>
     </div>
@@ -67,7 +67,8 @@
         <script>
         function openYT(){
             $("#player").fadeIn();
-
+            player.playVideo();
+            $('#YTbutton').fadeOut();
         }
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -117,7 +118,7 @@
         </div>   <!-- / website info -->
         <div class="col-md ml-2 mt-4">
           <!-- Notes about the website  -->
-          <p>something something</p>
+          <p>comments needed</p>
         </div><!-- / notes website info -->
       </div><!--- / about -->
 
@@ -129,7 +130,7 @@
           </li>
         </div> <!--- / website information -->
           <div class="col-md ml-4 mt-4"> <!--- Notes -->
-            <p>something something</p>
+            <p>comments needed</p>
           </div> <!---/ Notes -->
       </div> <!--- / about -->
 
@@ -140,7 +141,7 @@
               <span>List of some basic Git commands to get you going with Git.</span>
           </div> <!--- / website information -->
           <div class="col-md m-2 mt-4"> <!--- Notes -->
-            <p>something something</p>
+            <p>comments needed</p>
           </div> <!---/ Notes -->
       </div> <!--- / about -->
 
@@ -162,7 +163,7 @@
           </li>
         </div> <!--- / website information -->
           <div class="col-md m-3 mt-4"> <!--- Notes -->
-            <p>something something</p>
+            <p>comments needed</p>
           </div> <!---/ Notes -->
       </div> <!--- / about -->
 
@@ -193,7 +194,7 @@
         <!--- / website information -->
         <div class="col-md">
           <!--- Notes -->
-          <p>Something Something</p>
+          <p>comments needed</p>
         </div>
         <!---/ Notes -->
       </div>
@@ -216,17 +217,31 @@
         <!--- / website information -->
         <div class="col-md m-3 mt-4">
           <!--- Notes -->
-          <p>Something Something</p>
+          <p>comments needed</p>
         </div>
         <!---/ Notes -->
       </div>
      </ul>
   </div>  <!--/ github container -->
 
-  <div class="container" id=practice> <!-- div class for practice Resources -->
+  <div class="container" id=practice> <!-- div class for practiceMakesPerfect Resources -->
     <!-- image practice container-->
     <img src="img/practiceMakesPerfect.jpg" class="center" style="width: 15rem">
     <ul style="list-style: none;">
+
+      <div class="row" id="cs50xcourse">
+        <!-- about: webiste First Timers Only  -->
+        <div class="col-md mr-3"> <!--website info -->
+          <li class="practice">
+            <a  href="https://courses.edx.org-v1:HarvardX+CS50+X/course/"><h5>CS50's Introduction to Computer Science</h5></a><span>Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.</span>
+          </li>
+        </div>
+        <div class="col-md ml-2 mt-4">
+          <!-- Notes about the website  -->
+          <p>comments needed</p>
+        </div><!-- / notes website info -->
+      </div><!--- / about -->
+
       <div class="row" id="hackerrank">
         <!-- about: webiste First Timers Only  -->
         <div class="col-md mr-3"> <!--website info -->
@@ -255,31 +270,22 @@
         </div><!-- / notes website info -->
       </div><!--- / about -->
 
-      <div class="row" id="codecademy">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md mr-3"> <!--website info -->
-          <li class="practice" >
-            <a  href="https://www.codecademy.com/"><h5>Codecademy</h5></a><span> Great interactive online learning resource for most of the major languages in modern software.</span>
-          </li>
-        </div>   <!-- / website info -->
-        <div class="col-md ml-2 mt-4">
-          <!-- Notes about the website  -->
-          <p>I have yet to use this but looks like a great resource</p>
-        </div><!-- / notes website info -->
-      </div><!--- / about -->
+      <div class="row" id="w3school">
+          <!-- about: webiste First Timers Only  -->
+          <div class="col-md mr-3"> <!--website info -->
+            <li class="practice">
+              <a  href="https://www.w3schools.com/"><h5>w3schools.com</h5></a><span>Staight forward tutorials, references and examples to help people learn CS languages for buidling web pages and other programs.</span>
+            </li>
+          </div>   <!-- / website info -->
+          <div class="col-md ml-2 mt-4">
+            <!-- Notes about the website  -->
+            <p>comments needed</p>
+          </div><!-- / notes website info -->
+        </div><!--- / about -->
 
-  </div>  <!-- /div class for github resources -->
+  </div>  <!-- /div class for practiceMakesPerfect resources -->
 
 
-  <li class="practice">
-    <a  href="https://courses.edx.org-v1:HarvardX+CS50+X/course/">CS50's Introduction to Computer Science</a>: Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.
-
-    <p> Highly Recommend, if you have the time. This is the live actual Harvard Intro to computer science class and it is FREE. You are actually taking the class and watching the live streamed lectures, you have homework and projects, and access to the actual Harvard TAs. What really makes the course is the instructor though, David Malan, top notch CS professor. This a well known and well regarded into to CS. When I took the class it was based around the C programming language, it is now based around Python, which is much more relevant to modern programming. Recommend. (Ross Davis)
-    </p>
-
-    <p> Again, Ross Davis comments... however I've taken these courses and it demistified some of the fog of being a newbie computer programmer
-    </p>
-  </li>
 
 </body><!--- / container -->
 
@@ -287,32 +293,37 @@
   <!-- INWORK ITEMS -->
 <body>
 
+  <div class="row" id="webarchitecture101">
+    <!-- about: webiste First Timers Only  -->
+    <div class="col-md mr-3"> <!--website info -->
+
+      <li class="basicInfo">
+        <a  href="https://engineering.videoblocks.com/web-architecture-101-a3224e126947"><h5>Web Architecture 101</h5></a><span>The basic
+          architecture concepts to help to have a high level understand how websites are built.</span>
+        </li>
+      </div>   <!-- / website info -->
+      <div class="col-md ml-2 mt-4">
+        <!-- Notes about the website  -->
+        <p>This helped me alot</p>
+      </div><!-- / notes website info -->
+    </div><!--- / about -->
 
 
     <div class="container">
 
         <ul>
-          <li class="practice">
-              <a  href="https://engineering.videoblocks.com/web-architecture-101-a3224e126947">Web Architecture 101</a>: The basic
-              architecture concepts to help to have a high level understand how websites are built.
-              <p>This helped me alot</p>
-             </li>
 
 
 
-          <li class="practice">
-              <a  href="https://www.w3schools.com/">w3schools.com </a>: Staight forward tutorials, references and examples to help people learn CS languages for buidling web pages and other programs
-              <p>something something</p>
-            </li>
 
           <li class="learningPath">
               <a  href="https://mva.microsoft.com/LearningPaths.aspx/">MVA - Learning Paths</a>: Learning paths are curated courses brought to you by Microsoft Virtual Academy (MVA) to help you increase your proficiency in the latest technologies. Build valuable skills through video tutorials, demos, assessments, and more. Plus, earn MVA badges for completed learning paths, and share them through email or social media, such as LinkedIn, Twitter, and Facebook. Get started today!
-              <p>something something</p>
+              <p>comments needed</p>
             </li>
 
           <li class="testPrep">
               <a href="http://meli-lewis.github.io/GRE_Khan.html/">GRE Test Prep: Khan Academy  </a>: Blog on how to prepare for GRE exam by using Khan Academy website training modules
-              <p>something something</p>
+              <p>comments needed</p>
              </li>
 
 
@@ -321,22 +332,22 @@
 
                 <iframe id="AWS-vid" width="480" height="270" src="https://www.youtube.com/embed/0i3fUOtyKa8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
-                <p>something something</p>
+                <p>comments needed</p>
              </li>
 
           <li class="learningPath" >
                  <a href="https://aws.amazon.com/getting-started/use-cases/">AWS: 10-min Tutorials</a>: Get started with a simple Hello, World! tutorial to get hands-on with an AWS product.
-                 <p>something something</p>
+                 <p>comments needed</p>
             </li>
 
           <li class="references">
               <a  href="https://caniuse.com/#home" rel="external">Can I Use __________ ?</a>: "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
-               <p>something something</p>
+               <p>comments needed</p>
             </li>
 
           <li class="---">
               <a  href="https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44">Itnext.io Blog</a>: How to understand asynchronous JS code in a less painful way.
-               <p>something something</p>
+               <p>comments needed</p>
           </li>
 
         </ul>
