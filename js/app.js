@@ -68,6 +68,11 @@ function onPlayerStateChange(event) {
   }
 }
 
+
+// **************************************************************************
+//        Button Functions
+// **************************************************************************
+
 $('#YTplaybutton').on('click', function () {
     player.playVideo();
 });
@@ -77,7 +82,7 @@ $('#YTpausebutton').on('click', function () {
 });
 
 $('YTmutebutton').on('click', function() {
-    var YTmutebutton = $(this);
+    var mute_toggle = $(this);
 
     if(player.isMuted()){
         player.unMute();
