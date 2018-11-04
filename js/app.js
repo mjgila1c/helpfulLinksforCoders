@@ -93,3 +93,12 @@ $('YTmutebutton').on('click', function() {
         mute_toggle.text('volume_off');
     }
 });
+
+//********************************************************************
+//    nav link Functions
+//********************************************************************
+
+// $('#navbar-nav a').on('click', function(){
+//         $("#nav-bar").hide();
+//         $("#nav-bar").removeClass("active");
+//     });

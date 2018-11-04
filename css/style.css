@@ -17,9 +17,16 @@ h3 {
 
 p {
     font-style: italic;
-    font-family: "Montserrat", serif;
-    font-size: 18px;
-    color: Plum;
+    font-family: "Montserrat", cursive, serif;
+    font-size: 17px;
+    color: #A52A2A;
+}
+
+span {
+	font-style: normal;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 14px;
+	color: black;
 }
 
 li {
