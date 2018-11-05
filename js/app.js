@@ -98,7 +98,7 @@ $('YTmutebutton').on('click', function() {
 //    nav link Functions
 //********************************************************************
 
-// $('#navbar-nav a').on('click', function(){
-//         $("#nav-bar").hide();
-//         $("#nav-bar").removeClass("active");
-//     });
+$('#nav-item').on('click', function(){
+        $("#navbar-expand").collapse();
+        // $(".nav.navbar-expand-md").removeClass("active");
+    });

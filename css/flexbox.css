@@ -26,3 +26,19 @@ row {
   margin: 5px 5px 5px 5px;
 
 }
+/* the YTbox container is given a zero height and a % bottom badding. The % percentage bottom padding is a % of the container width, which gives it a fixed aspect ratio. */
+#YTbox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+/* In order to get the player (iframe) to show up inside the zero-height container, I need to make the container ralative and the player absolute, positioned inside the div. */
+#player {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
