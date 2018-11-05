@@ -62,6 +62,7 @@ function onPlayerReady(event) {
 function onPlayerStateChange(event) {
   if(event.data === 0){
     $("#player").fadeOut();
+    $("#YTbox").fadeOut();
     $("#YTplaybutton").fadeOut();
     $("#YTpausebutton").fadeOut();
     $("#YTbutton").fadeIn();
