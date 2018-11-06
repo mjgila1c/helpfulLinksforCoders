@@ -111,6 +111,9 @@ h5 a:link {
   min-width: 200px;
 }
 
+.btn-group {
+	align-content: space-between;
+}
 /********************************************************
     Media Queries
 **********************************************************  */
@@ -119,7 +122,9 @@ h5 a:link {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { .
-
+	#JScartoonMap {
+		width: 15rem;
+		}
   .. }
 
 // Medium devices (tablets, 768px and up)

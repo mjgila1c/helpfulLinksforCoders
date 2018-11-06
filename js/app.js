@@ -28,6 +28,10 @@ $nonscureLinks.attr('target', '_blank');
 
 function openYT(){
     $("#player").fadeIn();
+    $("#YTbox").fadeIn();
+    $("#YTplaybutton").fadeIn();
+    $("#YTpausebutton").fadeIn();
+    $("#YTmutebutton").fadeIn();
     player.playVideo();
     $('#YTbutton').fadeOut();
 }
@@ -44,7 +48,7 @@ var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
   videoId: '0i3fUOtyKa8',
-  playerVars: { 'autoplay': 0, 'controls': 0},
+  playerVars: { 'autoplay': 1, 'controls': 0},
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange,
