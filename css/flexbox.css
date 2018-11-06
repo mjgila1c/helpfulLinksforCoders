@@ -18,13 +18,11 @@ row {
   flex: auto;
   justify-content: space-around;
   align-items: center;
-  border-radius: 5px;
 }
 
 .btn-primary btn-lg {
   display: flex;
   margin: 5px 5px 5px 5px;
-
 }
 /* the YTbox container is given a zero height and a % bottom badding. The % percentage bottom padding is a % of the container width, which gives it a fixed aspect ratio. */
 #YTbox {
