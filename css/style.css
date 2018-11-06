@@ -15,6 +15,12 @@ h3 {
     color: blue;
 }
 
+h6 {
+	font-family: comic serif MS;
+	font-size: 15px;
+	font-style: italic;
+}
+
 p {
     font-style: italic;
     font-family: "Montserrat", cursive, serif;
@@ -74,7 +80,7 @@ iframe {
     box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
 }
 
-h5 > a:link {
+h5 a:link {
     font-size:1.25rem;
 }
 
@@ -124,8 +130,5 @@ h5 > a:link {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-	#YT.Player {
-		width: '950';
-		height: '500';
-	}
+
  }

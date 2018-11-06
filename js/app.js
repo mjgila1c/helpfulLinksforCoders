@@ -65,7 +65,9 @@ function onPlayerStateChange(event) {
     $("#YTbox").fadeOut();
     $("#YTplaybutton").fadeOut();
     $("#YTpausebutton").fadeOut();
+    $("#YTmutebutton").fadeOut();
     $("#YTbutton").fadeIn();
+
   }
 }
 
@@ -82,16 +84,16 @@ $('#YTpausebutton').on('click', function () {
     player.pauseVideo();
 });
 
-$('YTmutebutton').on('click', function() {
+$('#YTmutebutton').on('click', function() {
     var mute_toggle = $(this);
 
     if(player.isMuted()){
         player.unMute();
-        mute_toggle.text('volume_up');
+        mute_toggle.text('Mute video');
     }
     else{
         player.mute();
-        mute_toggle.text('volume_off');
+        mute_toggle.text('Unmute video');
     }
 });
 
