@@ -33,12 +33,32 @@ row {
   height: 100%;
 }
 
-.btn-group {
+#YTbuttonGroup {
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .btn-primary btn-lg {
   display: flex;
   margin: 5px 5px 5px 5px;
+}
+
+div.bb-docs {
+	display: flex;
+	flex: auto;
+	flex-wrap: wrap;
+  border-radius: 8px;
+  border: 5px 0 5px 0;
+}
+
+.col-sm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  border: none;
+  padding: 10px 0 10px 0;
+  border: none;
+
 }

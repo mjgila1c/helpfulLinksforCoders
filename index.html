@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <title>Helpful Links for Coders</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -48,20 +49,17 @@
         <div id="player"></div>
       </div>
 
-        <div class="d-flex m1-4">
-
-          <button type="button" class="btn btn-primary btn-lg btn-block Center" style="display: none" onclick="openYT()" id="YTbutton">Replay video
+        <div class="d-flex m1-4"> <!-- Replay button is block style (bootstrap) -->
+          <button type="button" class="btn btn-primary btn-lg btn-block" style="display: none" onclick="openYT()" id="YTbutton">Replay video
           </button>
-          <div class="btn-group px-2 mx-auto">
-            <button type="button" class="btn btn-primary btn-lg" style="display: none;" id="YTplaybutton">Play video</button>
-          </div>
-          <div class="btn-group px-2 mx-auto">
-            <button type="button" class="btn btn-primary btn-lg" style="display: none;" id="YTpausebutton">Pause video</button>
-          </div>
-          <div class="btn-group px-2 mx-auto">
-            <button type="button" class="btn btn-primary btn-lg"style="display: none;" id="YTmutebutton">Mute video</button>
-          </div>
         </div>
+        <div class="bb-docs"> <!-- Play Pause and Mute buttons are not Bootstrap -->
+          <button type="button" id="YTplaybutton"><h5 class="bb-docs">Play video</h5></button>
+          <button type="button" id="YTpausebutton"><h5 class="bb-docs">Pause video</h5></button>
+          <button type="button" id="YTmutebutton"><h5 class="bb-docs">Mute video</h5></button>
+        </div>
+
+
       <!-- /YT videos -->
       <p class="lead text-center">Links, Websites and Learning Platforms that can help you learn HTML JavaScript, CSS and other computer languages.</p>
     </div>
@@ -85,8 +83,10 @@
             <p>Good overall view of how the web works</p>
           </div><!-- / notes website info -->
         </div><!--- / about -->
-
-        <img id="JScartoonMap" src="img/JSdrawing2_hubertZub.png" alt="JS cartoon image" class="center" style="width: 28rem"><h6 class="center">(HuberZub img)</h6></img>
+          <div>
+            <img id="cartoon" src="img/JSdrawing2_hubertZub.png" alt="JS cartoon image" class="img-thumbnail center" style="width: 80%"><h6 class="center">(HuberZub img)</h6>
+            </img>
+          </div>
 
         <div class="row" id="blog.programminghub.io">
           <!-- about: webiste First Timers Only  -->
@@ -120,13 +120,15 @@
             <li class="basics_ABCs">
               <a  href="https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44"><h5>Itnext.io Blog</h5></a><span>How to understand asynchronous JS code in a less painful way</span>
             </li>
-            <img id="JScartoon" src="img/JSdrawing_hubertZub.png" alt="JS cartoon image" class="img-thumbnail"><h6 class="center">"It starts like this…"(HuberZub img)</h6></img>
           </div>
-          <div class="col-md m-3 ml-2 mt-4">
+          <div class="col-md m-2 ml-2 mt-1">
             <!-- Notes about the website  -->
             <p>This is about JavaScript, learning the basics, but also gives you an idea about the complexities of this fundamental program.</p>
-            <img id="JScartoon" src="img/JSdrawing1_hubertZub.png" alt="JS cartoon image" class="img-thumbnail"><h6 class="center">"…and end up in this. And it’s not the end!"(HuberZub img)</h6></img>
           </div><!-- / notes website info -->
+          <div class="img-thumbnail center" style="width: 80%">
+              <img id="cartoon" src="img/JSdrawing_hubertZub.png" alt="JS cartoon image" class="img-thumbnail"><h6 class="center">"It starts like this…"</h6></img>
+              <img id="cartoon" src="img/JSdrawing1_hubertZub.png" alt="JS cartoon image" class="img-thumbnail"><h6 class="center">"…and end up in this. And it’s not the end!" (HuberZub img)</h6></img>
+            </div>
         </div><!--- / about -->
 
       </div>  <!-- /div class for ABCs resources -->
@@ -217,9 +219,19 @@
 
       </div>  <!-- /div class for practiceMakesPerfect resources -->
 
-  <div class="container" id=github> <!-- div class for GitHub Resources -->
+  <div class="container" id='github'> <!-- div class for GitHub Resources -->
     <!-- image github container-->
-    <img src="img/githubLogo.png" class="center" style="width: 15rem">
+    <div class="row" id="gitandGithubHeader">
+      <div class="img-thumbnail grow center" style="width: 80%">
+        <div class="col-sm">
+          <img src="img/githubLogo.png" class="center" style="width: 45%" >
+          <img src="img/gitLog.png" class="center" style="width: 45%">
+        </div> <!-- /col-sm  -->
+      </div>
+    </div>
+
+
+
     <ul style="list-style: none;">
       <div class="row" id="firstTimersOnly">
         <!-- about: webiste First Timers Only  -->
@@ -245,6 +257,9 @@
             <p>comments needed</p>
           </div> <!---/ Notes -->
       </div> <!--- / about -->
+
+      <img id="cartoon" src="img/githubCartoon.png" alt="GitHub cartoon image" class="img-thumbnail center" style="width: 45%">
+      </img>
 
       <div class="row" id="bassicGitCommands"> <!--- about: website basic git commands -->
         <div class="col-md m-3"> <!--- website information -->
@@ -331,7 +346,7 @@
   </div>
   <!--/ github container -->
 
-  <div class="container" id=practice> <!-- div class for practiceMakesPerfect Resources -->
+  <div class="container" id='practice'> <!-- div class for practiceMakesPerfect Resources -->
     <!-- image practice container-->
 
     <img src="img/practiceMakesPerfect.jpg" class="center" style="width: 15rem">
@@ -405,8 +420,6 @@
           </div><!-- / notes website info -->
         </div><!--- / about -->
   </div>  <!-- /div class for practiceMakesPerfect resources -->
-
-
 
 
 </body><!--- / container -->
