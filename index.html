@@ -42,7 +42,7 @@
   <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h4 class="display-5 text-md-center pt-3" class="center">Helpful Information for People New to Coding</h4>
+      <h4 style="justify">Helpful Information for People New to Computer Programing</h4>
 
       <!-- YT video and control buttons -->
       <div class="container" id="YTbox">
@@ -50,21 +50,15 @@
       </div>
 
         <div class="d-flex m1-4"> <!-- Replay button is block style (bootstrap) -->
-          <button type="button" class="btn btn-primary btn-lg btn-block" style="display: none" onclick="openYT()" id="YTbutton">Replay video
-          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" style="display: none" onclick="openYT()" id="YTbutton">Replay Video</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="YTmutebutton">Mute Video</button>
         </div>
-        <div class="bb-docs"> <!-- Play Pause and Mute buttons are not Bootstrap -->
-          <button type="button" id="YTplaybutton"><h5 class="bb-docs">Play video</h5></button>
-          <button type="button" id="YTpausebutton"><h5 class="bb-docs">Pause video</h5></button>
-          <button type="button" id="YTmutebutton"><h5 class="bb-docs">Mute video</h5></button>
-        </div>
-
 
       <!-- /YT videos -->
-      <p class="lead text-center">Links, Websites and Learning Platforms that can help you learn HTML JavaScript, CSS and other computer languages.</p>
+      <p class="lead text-center">Links, Websites and Learning Platforms that can help you learn HTML JavaScript, CSS and other computer programming languages.</p>
+      </div>
     </div>
-  </div>
-  <!-- /Jumbotron -->
+  </div> <!-- /Jumbotron -->
 
   <div class="container" id=basics_ABCs> <!-- div class for learning Paths Resources -->
     <!-- image practice container-->
@@ -92,7 +86,7 @@
           <!-- about: webiste First Timers Only  -->
           <div class="col-md m-3 mr-3"> <!--website info -->
             <li class="basics_ABCs">
-              <a  href=""><h5>Basic Programming Concepts Blog</h5></a><span>Five basic concepts of any programming language </span>
+              <a  href="https://blog.programminghub.io/"><h5>Basic Programming Concepts Blog</h5></a><span>Simple blog about popular programming languages and thinks to know about them. </span>
             </li>
           </div>
           <div class="col-md m-3 ml-2 mt-4">
@@ -101,16 +95,16 @@
           </div><!-- / notes website info -->
         </div><!--- / about -->
 
-        <div class="row" id="programmingBasicsGettingStarted">
+        <div class="row" id="programming101">
           <!-- about: webiste First Timers Only  -->
           <div class="col-md m-3 mr-3"> <!--website info -->
             <li class="basics_ABCs">
-              <a  href=""><h5>Programming Basics: Getting Started</h5></a><span>Crude program that is a simple walk through on how programming works</span>
+              <a  href="https://howtoprogramwithjava.com/programming-101-the-5-basic-concepts-of-any-programming-language/"><h5>Programming 101</h5></a><span>The 5 Basic Concepts of any Programming Language</span>
             </li>
           </div>
           <div class="col-md m-3 ml-2 mt-4">
             <!-- Notes about the website  -->
-            <p>Not a very impressive design but it does spell out the basics of whats happening when you type code</p>
+            <p>Quick read and example of five important concepts: Variables, Control Structures, Data Structures, Syntax, and "Tools".</p>
           </div><!-- / notes website info -->
         </div><!--- / about -->
 
@@ -165,11 +159,14 @@
           </div><!-- / notes website info -->
         </div><!--- / about -->
 
+        <img id="cartoon" src="img/learningCartoon.png" alt="calvin and hobbes cartoon image" class="img-thumbnail center" style="width: 80%">
+        </img>
+
         <div class="row" id="cs50xcourse">
           <!-- about: webiste First Timers Only  -->
           <div class="col-md m-3 mr-3"> <!--website info -->
             <li class="practice">
-              <a  href="https://courses.edx.org-v1:HarvardX+CS50+X/course/"><h5>CS50's Introduction to Computer Science</h5></a><span>Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.</span>
+              <a  href="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/"><h5>CS50's Introduction to Computer Science</h5></a><span>Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.</span>
             </li>
           </div>
           <div class="col-md m-3 ml-2 mt-4"> <!-- Notes about the website  -->
@@ -195,7 +192,8 @@
           <!-- about: webiste First Timers Only  -->
           <div class="col-md m-3 mr-3"> <!--website info -->
             <li class="basics_ABCs">
-              <a  href=""><h5>Trailhead: Salesforce Training</h5></a><span>If you've ever wished for an easier way to learn about Salesforce, take a look at Trailhead. Trailhead provides developers and administrators a guided, learning path through the key features of Salesforce, using a set of interactive, online tutorials.</span>
+              <a  href="https://trailhead.salesforce.com/"><h5>Trailhead: Salesforce Training</h5></a><span>If you've ever wished for an easier way to learn about Salesforce, take a look at Trailhead. Trailhead provides developers and administrators a guided, learning path through the key features of Salesforce, using a set of interactive, online tutorials. <br><br></span>
+                <span>I should also reference <a href="https://developer.salesforce.com/">Salesforce for developers</a> to learn how to create and scale apps from Salesforce.
             </li>
           </div>
           <div class="col-md m-3 ml-2 mt-4">
@@ -230,8 +228,6 @@
       </div>
     </div>
 
-
-
     <ul style="list-style: none;">
       <div class="row" id="firstTimersOnly">
         <!-- about: webiste First Timers Only  -->
@@ -258,7 +254,7 @@
           </div> <!---/ Notes -->
       </div> <!--- / about -->
 
-      <img id="cartoon" src="img/githubCartoon.png" alt="GitHub cartoon image" class="img-thumbnail center" style="width: 45%">
+      <img id="cartoon" src="img/githubCartoon.png" alt="GitHub cartoon image" class="img-thumbnail center" style="width: 35%">
       </img>
 
       <div class="row" id="bassicGitCommands"> <!--- about: website basic git commands -->
@@ -380,6 +376,12 @@
           <p>I have yet to use this but looks like a great resource</p>
         </div><!-- / notes website info -->
       </div><!--- / about -->
+
+      <!-- calvin and hobbes cartoon -->
+      <img id="cartoon" src="img/calvin&hobbes.jpeg" alt="calvin and hobbes cartoon image" class="img-thumbnail center" style="width: 100%"><h6 class="center">Calvin & Hobbes thoughts on practicing</h6>
+      </img>
+      <!-- /calvin and hobbes -->
+
 
       <div class="row" id="w3school">
           <!-- about: webiste First Timers Only  -->

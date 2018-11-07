@@ -1,7 +1,14 @@
-@import url(resources/buttons.css);
 
 h2 {
 	font-size: 2.5rem;
+}
+
+h4 {
+	color:  #990073;
+	text-align: center;
+	font-size: 1.50em;
+	font-style: garamond;
+	font-weight: lighter;
 }
 
 h5.bb-docs {
@@ -19,16 +26,7 @@ div.bb-docs.dark {
   background: #000;
 }
 
-#YTmutebutton {
-	font-size: .85rem;
-	font-family: "MozTT", Sans-serif;
-	font-weight: lighter;
-	color: #666;
-	margin: -0.1rem 0 0;
-	background-color: #f5f5f5;
-	padding: 0.4rem 0.4rem 0.4rem 0rem;
-	border: solid 0.1rem #e8e8e8;
-}
+
 
 /* =================================
   Page Styles
@@ -121,9 +119,7 @@ h5 a:link {
 }
 
 #gitandGithubHeader {
-	padding: 	padding: 10px 0 10px 0;
-		border: none;
-	border: none;
+	padding: 25px 0 10px 0;
 }
 
 /* =====================================================

@@ -57,9 +57,6 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-  // $("#YTplaybutton").fadeIn();
-  // $("#YTpausebutton").fadeIn();
-  // $("#YTmutebutton").fadeIn();
   event.target.playVideo();
 }
 
@@ -93,11 +90,11 @@ $('#YTmutebutton').on('click', function() {
 
     if(player.isMuted()){
         player.unMute();
-        mute_toggle.text('Mute video');
+        mute_toggle.text('Mute Video');
     }
     else{
         player.mute();
-        mute_toggle.text('Unmute video');
+        mute_toggle.text('Unmute Video');
     }
 });
 
