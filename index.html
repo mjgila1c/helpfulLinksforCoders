@@ -6,468 +6,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <title>Helpful Links for Coders</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel='stylesheet' href="css/style.css">
     <link rel="stylesheet" href="css/flexbox.css">
-  </head>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 <body>
-
-  <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-  <a class="navbar-brand order-1" href="#"><strong>Helpful Links</strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#basics_ABCs">ABCs</a>
-      <a class="nav-item nav-link" href="#learningPath">LearningPaths</a>
-      <a class="nav-item nav-link" href="#github">GitHub <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#practice">Practice <span class="sr-only">(current)</span></a>
-    </div>
-  </div>
-</nav>
-  <!-- /Nav Bar -->
-
-  <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h4 style="justify">Helpful Information for People New to Computer Programing</h4>
-
-      <!-- YT video and control buttons -->
-      <div class="container" id="YTbox">
-        <div id="player"></div>
-      </div>
-
-        <div class="d-flex m1-4"> <!-- Replay button is block style (bootstrap) -->
-          <button type="button" class="btn btn-primary btn-lg btn-block" style="display: none" onclick="openYT()" id="YTbutton">Replay Video</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="YTmutebutton">Mute Video</button>
+  <div class="wrapper">
+      <div class="section">
+        <div class="section--img">
+          <img src="img/abcBlocks.jpg" alt="childs blocks stacked A B C" style="width: 30%"><h3>Building Blocks of Coding</h3>
+          <img/>
         </div>
-
-      <!-- /YT videos -->
-      <p class="lead text-center">Links, Websites and Learning Platforms that can help you learn HTML JavaScript, CSS and other computer programming languages.</p>
-      </div>
-    </div>
-  </div> <!-- /Jumbotron -->
-
-  <div class="container" id=basics_ABCs> <!-- div class for learning Paths Resources -->
-    <!-- image practice container-->
-    <img src="img/abcBlocks.jpg" class="center" style="width: 15rem">
-    <ul style="list-style: none;">
-
-      <div class="row" id="webarchitecture101">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md m-3 mr-3"> <!--website info -->
-          <li class="basics_ABCs">
-            <a  href="https://engineering.videoblocks.com/web-architecture-101-a3224e126947"><h5>Web Architecture 101</h5></a><span>The basic architecture concepts to help to have a high level understand how websites are built.</span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>Good overall view of how the web works</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-          <div>
-            <img id="cartoon" src="img/JSdrawing2_hubertZub.png" alt="JS cartoon image" class="img-thumbnail center" style="width: 80%"><h6 class="center">(HuberZub img)</h6>
-            </img>
-          </div>
-
-        <div class="row" id="blog.programminghub.io">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="basics_ABCs">
-              <a  href="https://blog.programminghub.io/"><h5>Basic Programming Concepts Blog</h5></a><span>Simple blog about popular programming languages and thinks to know about them. </span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>Easy to follow blog on programming, what it is and where to start.</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <div class="row" id="programming101">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="basics_ABCs">
-              <a  href="https://howtoprogramwithjava.com/programming-101-the-5-basic-concepts-of-any-programming-language/"><h5>Programming 101</h5></a><span>The 5 Basic Concepts of any Programming Language</span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>Quick read and example of five important concepts: Variables, Control Structures, Data Structures, Syntax, and "Tools".</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <div class="row" id="itnext.ioBlog">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="basics_ABCs">
-              <a  href="https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44"><h5>Itnext.io Blog</h5></a><span>How to understand asynchronous JS code in a less painful way</span>
-            </li>
-          </div>
-          <div class="col-md m-2 ml-2 mt-1">
-            <!-- Notes about the website  -->
-            <p>This is about JavaScript, learning the basics, but also gives you an idea about the complexities of this fundamental program.</p>
-          </div><!-- / notes website info -->
-          <div class="img-thumbnail center" style="width: 80%">
-              <img id="cartoon" src="img/JSdrawing_hubertZub.png" alt="JS cartoon image" class="img-thumbnail"><h6 class="center">"It starts like this…"</h6></img>
-              <img id="cartoon" src="img/JSdrawing1_hubertZub.png" alt="JS cartoon image" class="img-thumbnail"><h6 class="center">"…and end up in this. And it’s not the end!" (HuberZub img)</h6></img>
+        <ul class="section_list">
+          <li class="section_list--item">
+            <div class="link--wrapper">
+              <a href="https://blog.programminghub.io/" class="link"> Web Architecture 101</a>
+              <p class="link--description">The basic architecture concepts to help to have a high level understand how websites are built.</p>
             </div>
-        </div><!--- / about -->
-
-      </div>  <!-- /div class for ABCs resources -->
-
-  <div class="container" id=learningPath> <!-- div class for learningPaths Resources -->
-    <!-- image practice container-->
-    <img src="img/learning-paths.png" class="center mb-3 mt-3" style="width: 13rem">
-    <ul style="list-style: none;">
-
-      <div class="row" id="teamtreehouse">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md m-3 mr-3"> <!--website info -->
-          <li class="learningpath">
-            <a  href="https://teamtreehouse.com/tracks/web-design"><h5>Team Treehouse: Web Design Track </h5></a><span>This site will lead you through a series of Courses and Workshops so you can efficiently master the skills you need to achieve your goals. </span>
+            <div class="link--notes">
+              <p>Good overall view of how the web works</p>
+            <div>
+              <p> im kate</p>
           </li>
-        </div>
-
-        <div class="col-md m-3 ml-2 mt-4">
-          <!-- Notes about the website  -->
-          <p>Team Treehouse is a great way to introduce yourself to the coding environment. Code Louisville uses this site as the platform to train all students new to coding.</p>
-        </div><!-- / notes website info -->
-      </div><!--- / about -->
-
-      <div class="row" id="MVAlearningpaths">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md m-3 mr-3 mb-5"> <!--website info -->
-          <li class="learningpath">
-            <a  href="https://mva.microsoft.com/LearningPaths.aspx/"><h5>MVA - Learning Paths</h5></a><span>Courses by Microsoft Virtual Academy (MVA) to help you increase your proficiency in programming. Build valuable skills through video tutorials, demos, assessments, and more. Plus, earn MVA badges for completed learning paths, and share them through email or social media, such as LinkedIn, Twitter, and Facebook.</span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4 https://engineering.videoblocks.com/web-architecture-101-a3224e126947mt-4">
-            <!-- Notes about the website  -->
-            <p>I used this as a followup to what I learned in Team Treehouse in <strong>code Louisville</strong>. It's good to several resource to master different programs like HTML, CSS, JavaScript etc.</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <img id="cartoon" src="img/learningCartoon.png" alt="calvin and hobbes cartoon image" class="img-thumbnail center" style="width: 80%">
-        </img>
-
-        <div class="row" id="cs50xcourse">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="practice">
-              <a  href="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/"><h5>CS50's Introduction to Computer Science</h5></a><span>Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.</span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4"> <!-- Notes about the website  -->
-            <p>Highly Recommend, if you have the time. This is the live actual Harvard Intro to computer science class and it is FREE. You are actually taking the class and watching the live streamed lectures, you have homework and projects, and access to the actual Harvard TAs. What really makes the course is the instructor though, David Malan, top notch CS professor. This a well known and well regarded into to CS. When I took the class it was based around the C programming language, it is now based around Python, which is much more relevant to modern programming. Recommend. (Ross Davis)</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <div class="row" id="awsResourcesCenter">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="learningPath">
-              <a  href="https://aws.amazon.com/getting-started/use-cases/"><h5>AWS Resource Center</h5></a><span>From core concepts to beginner tutorials, find the information you need to start building on Amazon Web Services (AWS)  </span>
-            </li>
-          </div>
-
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>I'm not going to lie, this is a difficult site to navigate but its what you have to use if you want to learn AWS systems and possible earn a cerification from AWS</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <div class="row" id="trailheadSalesforce">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="basics_ABCs">
-              <a  href="https://trailhead.salesforce.com/"><h5>Trailhead: Salesforce Training</h5></a><span>If you've ever wished for an easier way to learn about Salesforce, take a look at Trailhead. Trailhead provides developers and administrators a guided, learning path through the key features of Salesforce, using a set of interactive, online tutorials. <br><br></span>
-                <span>I should also reference <a href="https://developer.salesforce.com/">Salesforce for developers</a> to learn how to create and scale apps from Salesforce.
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>I recently had the fortune to attend a training seminar on Trailhead: Salesforce and I'm really excited about the opportunities this site could help me acheive. This is highly worth looking into as it can provide you an easy way to learn to code "without coding" or with coding, its your choice. Lots of opportunities out there with Salesforce and easier then ever to learn... completely FREE!!!</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <div class="row" id="">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="basics_ABCs">
-              <a  href=""><h5>title</h5></a><span>discription</span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>comments needed</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-      </div>  <!-- /div class for practiceMakesPerfect resources -->
-
-  <div class="container" id='github'> <!-- div class for GitHub Resources -->
-    <!-- image github container-->
-    <div class="row" id="gitandGithubHeader">
-      <div class="img-thumbnail grow center" style="width: 80%">
-        <div class="col-sm">
-          <img src="img/githubLogo.png" class="center" style="width: 45%" >
-          <img src="img/gitLog.png" class="center" style="width: 45%">
-        </div> <!-- /col-sm  -->
-      </div>
-    </div>
-
-    <ul style="list-style: none;">
-      <div class="row" id="firstTimersOnly">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md m-3 mr-3"> <!--website info -->
-          <li class="github"><a href="https://www.firsttimersonly.com/"><h5>First Timers Only</h5> </a>
-            <span>Friendly Open Source Projects should reserve specific issues for newbies.</span>
+          <li class="section_list--item">
+            <div class="link--wrapper">
+              <a href="https://blog.programminghub.io/" class="link"> Web Architecture 101</a>
+              <p class="link--description">The basic architecture concepts to help to have a high level understand how websites are built.</p>
+            </div>
+            <div class="link--notes">
+              <p>Good overall view of how the web works</p>
+            <div>
+              <p> im kate</p>
           </li>
-        </div>   <!-- / website info -->
-        <div class="col-md m-3 ml-2 mt-4">
-          <!-- Notes about the website  -->
-          <p>comments needed</p>
-        </div><!-- / notes website info -->
-      </div><!--- / about -->
-
-      <div class="row" id="gettingGitRight"> <!--- about: website Getting Git Right -->
-        <div class="col-md m-3"> <!--- website information -->
-          <li class="github">
-            <a href="https://www.atlassian.com/git?utm_source=basic-git-commands&utm_medium=link&utm_campaign=git-microsite&_ga=2.173819875.1588753143.1538978694-1993520312.1537220850"><h5>Getting Git Right</h5></a>
-              <span>Atlassian Git Tutorials for a visual introduction to Git commands and workflows, including examples.</span>
-          </li>
-        </div> <!--- / website information -->
-          <div class="col-md m-3 ml-4 mt-4"> <!--- Notes -->
-            <p>comments needed</p>
-          </div> <!---/ Notes -->
-      </div> <!--- / about -->
-
-      <img id="cartoon" src="img/githubCartoon.png" alt="GitHub cartoon image" class="img-thumbnail center" style="width: 35%">
-      </img>
-
-      <div class="row" id="bassicGitCommands"> <!--- about: website basic git commands -->
-        <div class="col-md m-3"> <!--- website information -->
-          <li class="github">
-              <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"><h5>Basic Git Commands</h5></a>
-              <span>List of some basic Git commands to get you going with Git.</span>
-          </div> <!--- / website information -->
-          <div class="col-md m-3 m-2 mt-4"> <!--- Notes -->
-            <p>comments needed</p>
-          </div> <!---/ Notes -->
-      </div> <!--- / about -->
-
-      <div class="row" id="ohshitgit"> <!--- about: website -->
-        <div class="col-md m-3"> <!--- website information -->
-          <li class="github">
-            <a href="https://ohshitgit.com/"><h5>Oh shit, git!</h5></a><span>The name pretty much sums it up... Examples of some bad situations you can find yourself in with git, and how to get yourself out.</span>
-          </li>
-        </div> <!--- / website information -->
-          <div class="col-md m-3 m-3 mt-4"> <!--- Notes -->
-            <p>This this woman thinks...and talks like me... enough said! I also think I'll use her site CSS format for some of this site...</p>
-          </div> <!---/ Notes -->
-      </div> <!--- / about -->
-
-      <div class="row" id="howToContributeToOpensourceGuide"> <!--- about: website -->
-        <div class="col-md m-3"> <!--- website information -->
-          <li class="github">
-            <a  href="https://opensource.guide/how-to-contribute/#why-contribute-to-open-source"><h5>How to Contribute to Open Source: GitHub</h5></a><span>Want to contribute to open source? A guide to making open source contributions, for first-timers and for veterans.</span>
-          </li>
-        </div> <!--- / website information -->
-          <div class="col-md m-3 mt-4"> <!--- Notes -->
-            <p>If you don't know what the "open source concept" is, this is a good place to start.</p>
-          </div> <!---/ Notes -->
-      </div> <!--- / about -->
-
-      <div class="row" id="learnenough"> <!--- about: website  -->
-        <div class="col-md m-3"> <!--- website information -->
-          <li class="github">
-            <a href="https://www.learnenough.com/git-tutorial"><h5>Learn Enough Git To Be Dangerous</h5></a><span>Learn Enough Git to Be Dangerous is the final installment in a trilogy of tutorials on developer fundamentals designed to teach three skills essential for software developers and those who work with them. Its only prerequisites are the first two tutorials in the trilogy, <a href="https://www.learnenough.com/command-line-tutorial">Learn Enough Command Line to Be Dangerous</a> (covering the Unix command line) and <a href="https://www.learnenough.com/text-editor-tutorial">Learn Enough Text Editor to Be Dangerous</a> (covering text editors). This tutorial covers a third essential skill: version control.</span>
-          </li>
-        </div> <!--- / website information -->
-          <div class="col-md m-3 mt-4"> <!--- Notes -->
-            <p>If you're a TRUE newbie coder, this is a good starting point. Also great as a refresher on GitHub and basic computer navigation skills that hangs everyone up at some point.</p>
-          </div> <!---/ Notes -->
-      </div> <!--- / about -->
-
-      <div class="row" id="githubondemand">
-        <!--- about: website  -->
-        <div class="col-md m-3">
-          <!--- website information -->
-          <li class="github">
-            <h5>
-              <a href="https://services.github.com/on-demand/">Github On Demand Training</a>
-            </h5>
-            <span>This repository contains the completely open source on-demand training. These materials are provided under a Creative Commons License license.</span>
-          </li>
-        </div>
-        <!--- / website information -->
-        <div class="col-md m-3 mt-4">
-          <!--- Notes -->
-          <p>comments needed</p>
-        </div>
-        <!---/ Notes -->
-      </div>
-
-      <div class="row" id="learngitbranching">
-        <!--- about: website  -->
-        <div class="col-md m-3">
-          <!--- website information -->
-          <li class="github">
-            <h5>
-              <a href="https://learngitbranching.js.org/">Learn Git Branching</a>
-            </h5>
-            <span> This site is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way.</span>
-          </li>
-        </div>
-        <!--- / website information -->
-        <div class="col-md m-3 mt-4">
-          <!--- Notes -->
-          <p>Git and Github is an essential part of coding, use every source you can find to help understand it. This site is easy to understand.</p>
-        </div>
-        <!---/ Notes -->
-      </div>
-     </ul>
-  </div>
-  <!--/ github container -->
-
-  <div class="container" id='practice'> <!-- div class for practiceMakesPerfect Resources -->
-    <!-- image practice container-->
-
-    <img src="img/practiceMakesPerfect.jpg" class="center" style="width: 15rem">
-    <ul style="list-style: none;">
-
-
-      <div class="row" id="hackerrank">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md m-3 mr-3"> <!--website info -->
-          <li class="practice" >
-            <a href="https://www.hackerrank.com/"><h5>HackerRanker</h5></a>
-            <span>A technology hiring platform that is the standard for assessing developer skills for over 1,000 companies around the world.</span>
-          </li>
-        </div>   <!-- / website info -->
-        <div class="col-md m-3 ml-2 mt-4">
-          <!-- Notes about the website  -->
-          <p>Good resource to actually start practice algorithms and various concepts. Many companies use this platform for testing in the interview process. It is nice because it has "tracks" that allow you to hone and develop skills around various core CS concepts. I like the interface and the ability to focus the challenges on specific skill sets. (Ross Davis)
-          </p>
-        </div><!-- / notes website info -->
-      </div><!--- / about -->
-
-      <div class="row" id="codecademy">
-        <!-- about: webiste First Timers Only  -->
-        <div class="col-md m-3 mr-3"> <!--website info -->
-          <li class="practice" >
-            <a  href="https://www.codecademy.com/"><h5>Codecademy</h5></a><span> Great interactive online learning resource for most of the major languages in modern software.</span>
-          </li>
-        </div>   <!-- / website info -->
-        <div class="col-md m-3 ml-2 mt-4">
-          <!-- Notes about the website  -->
-          <p>I have yet to use this but looks like a great resource</p>
-        </div><!-- / notes website info -->
-      </div><!--- / about -->
-
-      <!-- calvin and hobbes cartoon -->
-      <img id="cartoon" src="img/calvin&hobbes.jpeg" alt="calvin and hobbes cartoon image" class="img-thumbnail center" style="width: 100%"><h6 class="center">Calvin & Hobbes thoughts on practicing</h6>
-      </img>
-      <!-- /calvin and hobbes -->
-
-
-      <div class="row" id="w3school">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="practice">
-              <a  href="https://www.w3schools.com/"><h5>w3schools.com</h5></a><span>Staight forward tutorials, references and examples to help people learn CS languages for buidling web pages and other programs.</span>
-            </li>
-          </div>   <!-- / website info -->
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>Easy to use reference on all types of subjet matter. Its best used when you have a specific question on types of programs. </p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <div class="row" id="codepen">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="practice">
-              <a  href=""><h5>Code Pen</h5></a><span>Write HTML, CSS, and JavaScript and get a real-time preview.</span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>This is regularly used in the world of programming, you should become familiar with this ASAP</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-
-        <div class="row" id="codewars">
-          <!-- about: webiste First Timers Only  -->
-          <div class="col-md m-3 mr-3"> <!--website info -->
-            <li class="practice">
-              <a  href="https://www.codewars.com/"><h5>Code Wars</h5></a><span>A fun "Game-ified" code challenge website, also the base of another platform that companies are starting to use for interview testing, good to be familiar with.</span>
-            </li>
-          </div>
-          <div class="col-md m-3 ml-2 mt-4">
-            <!-- Notes about the website  -->
-            <p>More entertaining way to learn coding!</p>
-          </div><!-- / notes website info -->
-        </div><!--- / about -->
-  </div>  <!-- /div class for practiceMakesPerfect resources -->
-
-
-</body><!--- / container -->
-
-
-  <!-- INWORK ITEMS -->
-<body>
-
-
-
-    <div class="container">
-
-        <ul>
-
-
-
-
-          <li class="testPrep">
-              <a href="http://meli-lewis.github.io/GRE_Khan.html/">GRE Test Prep: Khan Academy  </a>: Blog on how to prepare for GRE exam by using Khan Academy website training modules
-              <p>comments needed</p>
-             </li>
-
-
-          <li class="learningPath">
-              <a  href="https://aws.amazon.com/getting-started/use-cases/">AWS Resource Center </a>: From core concepts to beginner tutorials, find the information you need to start building on AWS.
-
-                <iframe id="AWS-vid" width="480" height="270" src="https://www.youtube.com/embed/0i3fUOtyKa8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                </iframe>
-                <p>comments needed</p>
-             </li>
-
-
-          <li class="references">
-              <a  href="https://caniuse.com/#home" rel="external">Can I Use __________ ?</a>: "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
-               <p>comments needed</p>
-            </li>
-
-          <li class="---">
-              <a  href="https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44">Itnext.io Blog</a>: How to understand asynchronous JS code in a less painful way.
-               <p>comments needed</p>
-          </li>
-
         </ul>
-
-        <!-- footer -->
-
+      </div>
+      <div class="section">
+        <ul class="section_list">
+          <li class="section_list--item">
+            <div class="link--wrapper">
+              <a href="https://blog.programminghub.io/" class="link"> Web Architecture 101</a>
+              <p class="link--description">The basic architecture concepts to help to have a high level understand how websites are built.</p>
+            </div>
+            <div class="link--notes">
+              <p>Good overall view of how the web works</p>
+            <div>
+              <p> im kate</p>
+          </li>
+        </ul>
+      </div>
+  </div>
+  
+<!-- footer -->
+        <div class="footer" style="width: 100%; height: 200px; background-color: red;">
+          <div></div>
+        </div>
+        </div>
         <!-- /footer -->
 
         <script
@@ -475,6 +79,9 @@
           integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
         <script src="js/app.js" type="text/javascript"></script>
-    </div>
-</body>
+
+</body><!--- / container -->
+
+
+ 
 </html>
