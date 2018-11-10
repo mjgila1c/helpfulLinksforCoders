@@ -33,6 +33,7 @@ div.bb-docs.dark {
 ==================================== */
 
 body {
+    box-sizing: border-box;
 	font-size: 1.35em;
 	font-family: 'Varela Round', sans-serif;
 	background: lightgrey;
@@ -42,6 +43,9 @@ body {
 
 h3 {
     color: blue;
+    font-size: 1.50rem;
+    padding: 0 10px 0 10px;
+
 }
 
 h6 {
@@ -93,34 +97,34 @@ a:active {
    text-decoration: underline;
 }
 
-iframe {
-  float: none;
-  border-radius: 1.5em;
-}
+/*iframe {*/
+/*  float: none;*/
+/*  border-radius: 1.5em;*/
+/*}*/
 
-.container {
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-    margin: 45px auto;
-    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
-}
+/*.container {*/
+/*    padding: 10px;*/
+/*    background: #fff;*/
+/*    border-radius: 5px;*/
+/*    margin: 45px auto;*/
+/*    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);*/
+/*}*/
 
 h5 {
     display: compact;
-    font-size:.85rem;
+    font-size: 75%;
     font-family: "Sans-serif" arial, 
-    text-align: center;
+    
 }
 
-#cartoon {
-	padding: 10px 0 10px 0;
-	border: none;
-}
+/*#cartoon {*/
+/*	padding: 10px 0 10px 0;*/
+/*	border: none;*/
+/*}*/
 
-#gitandGithubHeader {
-	padding: 25px 0 10px 0;
-}
+/*#gitandGithubHeader {*/
+/*	padding: 25px 0 10px 0;*/
+/*}*/
 
 /* =====================================================
        Customized Bootstrap sytle
@@ -188,16 +192,21 @@ h5 {
 
 .section_list--item {
     display:flex;
-    flex-direction: column
+    flex-direction: column;
+    
 }
 
 .link--wrapper a {
- 
 }
 
 .link--wrapper {
 
 }
+
+.section--img {
+    padding-top: 20px;
+    padding-bottom: 30px;
+ }
 
 .link--notes {
     font-style: italic;
@@ -225,11 +234,51 @@ h5 {
 }
 
 .section_list--img {
+    vertical-align: middle;
+    position: relative;
+    max-width: 98%;
+    margin: 0 auto;
     padding: 10px 5px 20px 15px;
     
 }
 
+.section_list--img 
+.section_list--img--text {
+  position: absolute;
+  bottom: 5px;
+  background: rgb(223, 232, 216); /* Fallback color */
+  background: rgba(223, 232, 216, 0.5); /* Black background with 0.5 opacity */
+  color: black;
+  width: 75%;
+  height: auto;
+  border-radius:5px;
+  padding-left: 40px;
+  
+ }
 
+
+/*******************************************************************************
+        Small displays / cell phones
+********************************************************************************/
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 240px) { 
+    
+    .section_list--img {
+        max-width: 100%;
+    }
+    
+    .section_list--img 
+    .section_list--img--text {
+        position: relative;
+        /*max-width: 50%;*/
+        /*max-height: 15%;*/
+        
+}
+
+@media (min-width: 396px ) {
+
+}
 
 /********************************************************
     Tablet/ Desktop
@@ -245,6 +294,14 @@ h5 {
     
     .link--description {
         padding-right: 5rem;
+    }
+    
+    .section_list--img {
+        max-width: 90%;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
     }
 }
 
@@ -264,6 +321,10 @@ h5 {
     
     a {
     font-size: 23px;
+    }
     
+    .section_list--img {
+    max-width: 80%;
+    }
 }
 
