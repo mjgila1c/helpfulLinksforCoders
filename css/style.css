@@ -1,9 +1,39 @@
 
-/* ================================= 
+h2 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	color:  #990073;
+	text-align: center;
+	font-size: 1.50em;
+	font-style: garamond;
+	font-weight: lighter;
+}
+
+/*h5.bb-docs {*/
+/*  font-size: .85rem;*/
+/*  font-family: "MozTT", Sans-serif;*/
+/*  font-weight: lighter;*/
+/*  color: #666;*/
+/*  margin: -0.1rem 0 0;*/
+/*  background-color: #f5f5f5;*/
+/*  padding: 0.4rem 0.4rem 0.4rem 0rem;*/
+/*  border: solid 0.1rem #e8e8e8;*/
+/*}*/
+
+div.bb-docs.dark {
+  background: #000;
+}
+
+
+
+/* =================================
   Page Styles
 ==================================== */
 
 body {
+    box-sizing: border-box;
 	font-size: 1.35em;
 	font-family: 'Varela Round', sans-serif;
 	background: lightgrey;
@@ -13,35 +43,46 @@ body {
 
 h3 {
     color: blue;
+    font-size: 1.50rem;
+    padding: 0 10px 0 10px;
+
 }
 
-p {
-    font-style: italic;
-    font-family: "Montserrat", serif;
+h6 {
+	font-family: comic serif MS;
+	font-size: 15px;
+	font-style: italic;
+}
+
+/*p {*/
+/*    font-style: italic;*/
+/*    font-family: "Montserrat", cursive, serif;*/
+/*    font-size: 17px;*/
+/*    color: #A52A2A;*/
+/*}*/
+
+/*span {*/
+/*	font-style: normal;*/
+/*	font-family: "Comic Sans MS", cursive, sans-serif;*/
+/*	font-size: 14px;*/
+/*	color: black;*/
+/*}*/
+
+
+
+a {
     font-size: 18px;
-    color: Plum;
- 
-
-} 
-
-li {
-    font-size: 15px;
-    font-family: 'Tmes New Roman', Times, serif;
-    margin-bottom: .5em;
-}
-
-
-a:link {
-    font-size: 16px;
     color: purple;
     background-color: transparent;
     text-decoration: none;
+    margin: 20px 0 20px 0;
 }
 
 a:visited {
-    color: green;
-    background-color: transparent;
+  color: green;
+   background-color: transparent;
    text-decoration: none;
+
 }
 
 a:hover {
@@ -56,15 +97,234 @@ a:active {
    text-decoration: underline;
 }
 
-iframe {
-  float: none;
-  border-radius: 1.5em;
+/*iframe {*/
+/*  float: none;*/
+/*  border-radius: 1.5em;*/
+/*}*/
+
+/*.container {*/
+/*    padding: 10px;*/
+/*    background: #fff;*/
+/*    border-radius: 5px;*/
+/*    margin: 45px auto;*/
+/*    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);*/
+/*}*/
+
+h5 {
+    display: compact;
+    font-size: 75%;
+    font-family: "Sans-serif" arial, 
+    
 }
 
-.container {
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-    margin: 45px auto;
-    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+/*#cartoon {*/
+/*	padding: 10px 0 10px 0;*/
+/*	border: none;*/
+/*}*/
+
+/*#gitandGithubHeader {*/
+/*	padding: 25px 0 10px 0;*/
+/*}*/
+
+/* =====================================================
+       Customized Bootstrap sytle
+========================================================*/
+
+.jumbotron {
+  background-image: url('../img/scrolling_HTML_code.png');
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5rem;
 }
+
+.navbar .navbar-brand {
+  color: rgba(102, 115, 128, 1);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.col-md {
+  min-width: 200px;
+}
+
+.btn-group {
+	align-content: space-between;
+}
+/********************************************************
+    Media Queries
+**********************************************************  */
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { .
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+ }
+
+
+
+/********************************************************
+    Kate Styles
+**********************************************************  */
+
+.section {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.section_list {
+    list-style: none;
+}
+
+.section_list--item {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.link--wrapper a {
+}
+
+.link--wrapper {
+
+}
+
+.section--img {
+    padding-top: 20px;
+    padding-bottom: 30px;
+ }
+
+.link--notes {
+    font-style: italic;
+    font-family: "Montserrat", cursive, serif;
+    font-size: 17px;
+    color: #A52A2A;
+    padding: 15px 15px 20px 10px;
+}
+
+.link--description {
+    font-style: normal;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+    color: black;
+    padding-right: 15px;
+}
+
+.footer {
+    display: none;
+}
+
+.section--img {
+    text-align: center;
+    
+}
+
+.section_list--img {
+    vertical-align: middle;
+    position: relative;
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 10px 5px 20px 15px;
+    
+}
+
+.section_list--img 
+.section_list--img--text {
+  position: absolute;
+  bottom: 5px;
+  background: rgb(223, 232, 216); /* Fallback color */
+  background: rgba(223, 232, 216, 0.5); /* Black background with 0.5 opacity */
+  color: black;
+  width: 75%;
+  height: auto;
+  border-radius:5px;
+  padding-left: 40px;
+  
+ }
+
+
+/*******************************************************************************
+        Small displays / cell phones
+********************************************************************************/
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 240px) { 
+    
+    .section_list--img {
+        max-width: 100%;
+    }
+    
+    .section_list--img 
+    .section_list--img--text {
+        position: relative;
+        /*max-width: 50%;*/
+        /*max-height: 15%;*/
+        
+}
+
+@media (min-width: 396px ) {
+
+}
+
+/********************************************************
+    Tablet/ Desktop
+***********************************************************/
+@media (min-width: 768px) {
+    .section_list--item {
+        flex-direction: row;
+    }
+    
+    .section_list--item > * {
+        width: 50%;
+    }
+    
+    .link--description {
+        padding-right: 5rem;
+    }
+    
+    .section_list--img {
+        max-width: 90%;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+/***************************************************************
+    Large Screen Desktop
+    
+****************************************************************/
+
+@media (min-width: 992px) {
+    .link--notes {
+    font-size: 22px;
+   }
+
+    .link--description {
+      font-size: 19px;
+    }
+    
+    a {
+    font-size: 23px;
+    }
+    
+    .section_list--img {
+    max-width: 80%;
+    }
+}
+
