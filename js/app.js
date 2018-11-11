@@ -1,26 +1,13 @@
-// const listItems = document.getElementsByTagName('a');
-
-// listItems.addEventListener('mouseover', () => {
-//   listItems.textContent = listItems.textContent.toUpperCase();
-// });
-
-// listItems.addEventListener('mouseout', () => {
-//   listItems.textContent = listItems.textContent.toLowerCase();
-// });
-
-// $('#AWS-vid').click(function(event){
-//   console.log;
-//   break;
-// });
-
 
 
 const $secureLinks = $('a[href^="https://"]');
 const $nonscureLinks = $('a[href^="http://"]');
+const $imgTextCenter = $('section_list--img--text');
 
 
 $secureLinks.attr('target', '_blank');
 $nonscureLinks.attr('target', '_blank');
+$imgTextCenter.addClass('text-center');
 
 // /**********************************************************************
 // **  YouTube Video Control
@@ -107,9 +94,9 @@ $('#nav-item').on('click', function(){
         // $(".nav.navbar-expand-md").removeClass("active");
     });
 
-    //********************************************************************
-    //    Media Queries functions
-    //*********************************************************
+//********************************************************************
+//    Media Queries functions
+//*********************************************************
 
   // var mql = window.matchMedia('(max-width: 600px)');
 
