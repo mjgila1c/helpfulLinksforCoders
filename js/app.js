@@ -95,26 +95,20 @@ $('#nav-item').on('click', function(){
     });
 
 //********************************************************************
-//    Media Queries functions
+//   Sticky Navbar Functions
 //*********************************************************
 
-  // var mql = window.matchMedia('(max-width: 600px)');
+// <script>
+window.onscroll = function() {myFunction()};
 
-  //   function screenTest(e) {
-  //     if (e.matches) {
-  //       /* the viewport is 600 pixels wide or less */
-  //       // para.textContent = 'This is a narrow screen — less than 600px wide.';
-  //       // document.body.style.backgroundColor = 'red';
-  //
-  //
-  //         }
-  //       }
-  //
-  //     } else {
-  //       /* the viewport is more than than 600 pixels wide */
-  //       para.textContent = 'This is a wide screen — more than 600px wide.';
-  //       document.body.style.backgroundColor = 'blue';
-  //     }
-  //   }
-  //
-  // mql.addListener(screenTest);
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+// </script>

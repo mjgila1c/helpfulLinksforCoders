@@ -11,17 +11,6 @@ h4 {
 	font-weight: lighter;
 }
 
-/*h5.bb-docs {*/
-/*  font-size: .85rem;*/
-/*  font-family: "MozTT", Sans-serif;*/
-/*  font-weight: lighter;*/
-/*  color: #666;*/
-/*  margin: -0.1rem 0 0;*/
-/*  background-color: #f5f5f5;*/
-/*  padding: 0.4rem 0.4rem 0.4rem 0rem;*/
-/*  border: solid 0.1rem #e8e8e8;*/
-/*}*/
-
 div.bb-docs.dark {
   background: #000;
 }
@@ -33,10 +22,15 @@ div.bb-docs.dark {
 ==================================== */
 
 body {
-    box-sizing: border-box;
 	font-size: 1.35em;
 	font-family: 'Varela Round', sans-serif;
-	background: lightgrey;
+  background-image: url('../img/scrolling_HTML_code.png');
+	/* padding-left: 5%;
+	padding-right: 5%; */
+}
+
+
+.wrapper {
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -54,21 +48,8 @@ h6 {
 	font-style: italic;
 }
 
-/*p {*/
-/*    font-style: italic;*/
-/*    font-family: "Montserrat", cursive, serif;*/
-/*    font-size: 17px;*/
-/*    color: #A52A2A;*/
-/*}*/
 
-/*span {*/
-/*	font-style: normal;*/
-/*	font-family: "Comic Sans MS", cursive, sans-serif;*/
-/*	font-size: 14px;*/
-/*	color: black;*/
-/*}*/
-
-
+}
 
 a {
     font-size: 18px;
@@ -118,33 +99,63 @@ h5 {
 }
 
 
-.main-nav {
+/* .nav-navbar {
 	margin-top: 5px;
 }
 
-.main-nav a {
+.nav-navbar a {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
 	font-size: .95em;
 	color: #3acec2;
 
+} */
+
+.navbar {
+  overflow: hidden;
 }
 
+nav ul{
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+	margin: 0;
+  padding: 0;
+}
+nav li{
+  list-style-type: none;
+  padding: 0;
+  border-top: 1px solid #000;
+}
+nav a{
+  color: #e20943;
+	font-weight: bold;
+	font-size: 20px;
+  text-decoration: none;
+  display: block;
+	margin: 0;
+}
 
-.main-nav a:hover {
-	color: #093a58;
+nav li:hover {
+	background-color: #ddd;
 	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: purple;
 }
 /* =====================================================
        Customized Bootstrap sytle
 ========================================================*/
 
 .jumbotron {
-  background-image: url('../img/scrolling_HTML_code.png');
-  padding: 10px;
-  border-radius: 5px;
+  padding: 20px 0 20px 0;
+	background-color:  #eaf1f2;
+  border-radius: 10px;
   margin-top: 5rem;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .jumbotron h1 {
@@ -155,31 +166,15 @@ h5 {
 .jumbotron p {
     background: white;
     font-size: 1.75rem;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
 }
 
-.navbar .navbar-brand {
-  color: rgba(102, 115, 128, 1);
+.jumbotron .section {
+	background-color: white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
-
-navbar navbar {
-    padding-top: 80px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.col-md {
-  min-width: 200px;
-}
-
-.btn-group {
-	align-content: space-between;
-}
-
 
 /********************************************************
     Media Queries
@@ -204,12 +199,13 @@ navbar navbar {
 
 
 /********************************************************
-    Kate Styles
+    Custom Styles
 **********************************************************  */
 
 .section {
-    background-color: #ffffff;
+    background-color: #eaf1f2;
     border-radius: 15px;
+		border-bottom: 50px;
 }
 
 .section_list {
@@ -261,6 +257,7 @@ navbar navbar {
 
 .section--img, img {
     margin-right: 10px;
+		border-radius: 5px;
 }
 
 .section_list--img {
@@ -268,8 +265,8 @@ navbar navbar {
     position: relative;
     max-width: 98%;
     margin: 0 auto;
-    padding: 10px 0 20px;
-    
+    padding: 20px 10px 20px 20px;
+
 
 }
 
@@ -277,8 +274,6 @@ navbar navbar {
 .section_list--img--text {
   position: absolute;
   bottom: 5px;
-  background: rgb(223, 232, 216); /* Fallback color */
-  background: rgba(223, 232, 216, 0.5); /* background with 0.5 opacity */
   color: black;
   width: 75%;
   height: auto;
@@ -286,10 +281,23 @@ navbar navbar {
   padding-left: 65px;
 
  }
- 
+
 .container {
     display: flex;
-} 
+}
+/******************************************************
+/        Nav Bar sticky
+/******************************************************/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .wrapper {
+  padding-top: 60px;
+}
 
 
 /*******************************************************************************
@@ -299,22 +307,22 @@ navbar navbar {
  /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 240px) {
 
-    .section_list--img {
-        max-width: 100%;
+.section_list--img {
+    max-width: 100%;
     }
 
-    .section_list--img
-    .section_list--img--text {
-        position: relative;
-        font-size: 1.75rem;
-        /*max-width: 50%;*/
-        /*max-height: 15%;*/
+.section_list--img
+.section_list--img--text {
+    position: relative;
+    font-size: 1.75rem;
+    /*max-width: 50%;*/
+    /*max-height: 15%;*/
 
 }
 
-@media (max-width: 396px ) {
-    
-    .jumbotron h1 {
+@media (max-width: 426px ) {
+
+ .jumbotron h1 {
     font-size: 1.8rem;
     }
 
@@ -322,7 +330,21 @@ navbar navbar {
     background: white;
     font-size: 1.15rem;
     }
+.section_list--img
+.section_list--img--text {
+		font-size: 1.2rem;
+	}
+}
 
+@media (max-width: 992px ) {
+
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar li{
+    display: inline-block;
+    padding: 10px;
+		}
 }
 
 /********************************************************
@@ -348,12 +370,12 @@ navbar navbar {
     h3 {
         font-size: 1.75rem;
     }
-    
+
     .main-header,
 	.main-nav {
 		display: flex;
 	}
-	
+
 	.main-header {
 		flex-direction: column;
 		align-items: center;
@@ -381,6 +403,6 @@ navbar navbar {
     .section_list--img {
     max-width: 80%;
     }
-    
+
 
 }
