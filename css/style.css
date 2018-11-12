@@ -161,6 +161,10 @@ h5 {
   color: rgba(102, 115, 128, 1);
 }
 
+navbar navbar {
+    padding-top: 80px;
+}
+
 .center {
   display: block;
   margin-left: auto;
