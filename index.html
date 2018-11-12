@@ -20,65 +20,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
-  <a class="navbar-brand order-1" href="#"><h3>Helpful Links</h3></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"S aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link ml-5 mr-1" href="#abcBlocks">ABCs of Coding</a>
-      <a class="nav-item nav-link mr-1" href="#learning-pathways">Learning Paths</a>
-      <a class="nav-item nav-link mr-1" href="#github">Git & GitHub</a>
-      <a class="nav-item nav-link" href="#practiceMakesPerfect">Practice</a>
-    </div>
-  </div>
-</nav>
-
- <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="wrapper">
-        <div class="section">
-        <h1 class="lead text-center" style="display-2">Helpful Information for People New to Computer Programing</h1>
-        
-          <!-- YT video and control buttons -->
-        <div class="container" id="YTbox">
-          <div id="player"></div>
-        </div>
-      </div>
-
-        <div class="d-flex m1-4"> <!-- Replay button is block style (bootstrap) -->
-          <button type="button" class="btn btn-primary btn-lg btn-block" style="display: none" onclick="openYT()" id="YTbutton">Replay Video</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="YTmutebutton">Mute Video</button>
-        </div>
-
-      <!-- /YT videos -->
-      
-      <p class="lead text-center">Links, Websites and Learning Platforms that can help you learn HTML JavaScript, CSS and other computer programming languages.</p>
-      </div>
-    </div>
-  </div> <!-- /Jumbotron -->
-
-
   <div class="wrapper">
-      <div class="section" id="abcBlocks">
+      <div class="section">
         <div class="section--img">
           <img src="img/abcBlocks.jpg" alt="childs blocks stacked A B C" style="width: 30%"><h3>Building Blocks of Coding</h3>
           <img/>
         </div>
         <ul class="section_list">
-          <li class="section_list--item">
-            <div class="link--wrapper">
-              <a href="https://learntocodewith.me/podcast/tech-careers/" class="link"> The Beginner's Guide to Tech Careers</a>
-              <p class="link--description">Created by Laurence Bradford, creator of Learn to Code With Me, to explain some of the Tech Careers that might interest you</p>
-            </div>
-            <div class="link--notes">
-              <p>Easy to follow breakdown on what careers are out there for "coders", I found it a good place to start.</p>
-            <div>
-          </li>
           <li class="section_list--item">
             <div class="link--wrapper">
               <a href="https://blog.programminghub.io/" class="link"> Web Architecture 101</a>
@@ -128,6 +78,7 @@
               <p>This is about JavaScript, learning the basics, but also gives you an idea about the complexities of this fundamental program.</p>
             </div>
           </li>
+
           <div class="section_list--img">
             <img src="img/JSdrawing_hubertZub.png" alt="JS Cartoon" style="width: 80%">
               <div class="section_list--img--text">
@@ -140,9 +91,10 @@
                 <h5>"…and end up in this. And it’s not the end!" (HuberZub img)</h5>
               </div> <!--/section-list--img--text-->
             </div> <!--/section_list--img-->
+
         </ul>
       </div> <!--/section-->
-      <div class="section" id="learning-pathways">
+      <div class="section">
         <div class="section--img">
          <img src="img/learning-paths.png" alt="globe with graduation hat" style="width: 30%"><h3>Learning Pathway Training Programs</h3>
          </div>
@@ -203,163 +155,14 @@
           </li>
         </ul> <!-- /Learning Pathway Section -->
       </div>  <!-- /Learning Pathway Section -->
-      <div class="section" id="github"> <!-- git and Github Section -->
+      <div class="section"> <!-- git and Github Section -->
         <div class="section--img">
          <img src="img/gitLog.png" alt="git logo" style="width: 25%">
-         <img src="img/AspersandLogo.jpg" alt="Aspersand logo" style="width: 12%">
          <img src="img/githubLogo.jpg" alt="github logo" style="width: 40%">
-           <h3>Git and Github Training </h3>
+         <h3>Git and Github Training </h3>
         </div>
-        <ul class="section_list"><!--git and Github Section list -->
-          <li class="section_list--item">
-            <div class="link--wrapper">
-              <a href="https://www.firsttimersonly.com/" class="link">First Timers Only</a>
-              <p class="link--description">Friendly Open Source Projects should reserve specific issues for newbies.
-            </div>
-            <div class="link--notes">
-              <p>This site helped me understand the concepts of "open source" and "contribute" specifically meant for <a href="https://www.codenewbie.org/" class="link"> Code Newbies.</a></p>
-            </div>
-          </li>
-          <li class="section_list--item">
-            <div class="link--wrapper">
-              <a href="https://www.firsttimersonly.com/" class="link">Getting Git Right</a>
-              <p class="link--description">Atlassian Git Tutorials for a visual introduction to Git commands and workflows, including examples.
-            </div>
-            <div class="link--notes">
-              <p>Also a good source for Code Newbies interested in learning about open version control systems and how to contribute</a></p>
-            </div>
-          </li>
-          <li class="section_list--item">
-            <div class="link--wrapper">
-              <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html" class="link">Basic Git Commands</a>
-              <p class="link--description">List of some basic Git commands to get you going with Git.
-            </div>
-            <div class="link--notes">
-              <p>Good reference on how to handle git navigation until it becomes second nature.</a></p>
-            </div>
-          </li>
-          <li class="section_list--item">
-            <div class="link--wrapper">
-              <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html" class="link">Basic Git Commands</a>
-              <p class="link--description">List of some basic Git commands to get you going with Git.
-            </div>
-            <div class="link--notes">
-              <p>Good reference on how to handle git navigation until it becomes second nature.</a></p>
-            </div>
-          </li>
-          
-         <div class="section_list--img">
-          <img src="img/githubCartoon.png" alt="github Cartoon" style="width: 50%">
-            <div class="section_list--img--text">
-              <h5></h5>
-            </div> <!--/section-list--img--text-->
-          </div> <!--/section_list--img-->
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://ohshitgit.com/" class="link">Oh Shit, git!</a>
-            <p class="link--description">The name pretty much sums it up... Examples of some bad situations you can find yourself in with git, and how to get yourself out.
-          </div>
-          <div class="link--notes">
-            <p>This this woman thinks...and talks like me... enough said! I also think I'll use her site CSS format for some of this site...</a></p>
-          </div>
-        </li>
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://opensource.guide/how-to-contribute/#why-contribute-to-open-source" class="link">How to Contribute to Open Source</a>
-            <p class="link--description">Want to contribute to open source? A guide to making open source contributions, for first-timers and for veterans.
-          </div>
-          <div class="link--notes">
-            <p>If you don't know what the "open source concept" is, this is a good place to start.</a></p>
-          </div>
-        </li>
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://www.learnenough.com/git-tutorial" class="link">Learn Enough Git to Be Dangerous</a>
-            <p class="link--description">Learn Enough Git to Be Dangerous is the final installment in a trilogy of tutorials on developer fundamentals designed to teach three skills essential for software developers and those who work with them. Its only prerequisites are the first two tutorials in the trilogy, <a href="https://www.learnenough.com/command-line-tutorial" class="link">Learn Enough Command Line to Be Dangerous</a> (covering the Unix command line) and <a href="https://www.learnenough.com/text-editor-tutorial" class="link">Learn Enough Text Editor to Be Dangerous</a> (covering text editors). This tutorial covers a third essential skill: version control.
-          </div>
-          <div class="link--notes">
-            <p>If you're a TRUE newbie coder, this is a good starting point. Also great as a refresher on GitHub and basic computer navigation skills that hangs everyone up at some point.</a></p>
-          </div>
-        </li>
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://lab.github.com/" class="link">GitHub Learning Lab</a>
-            <p class="link--description">This repository contains the completely open source on-demand training. These materials are provided under a Creative Commons License license.
-          </div>
-          <div class="link--notes">
-            <p>This take you through  a series of "fun" and practical projects, sharing helpful feedback along the way. It's straight from Github so worth looking into.</a></p>
-          </div>
-        </li>
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://learngitbranching.js.org/" class="link">Learn Git Branching</a>
-            <p class="link--description">This site is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way.
-          </div>
-          <div class="link--notes">
-            <p>Git and Github is an essential part of coding, use every source you can find to help understand it. This site is easy to understand.</p>
-          </div>
-        </li>
-       </ul> <!-- /Git and Github Section List -->
-    </div>  <!-- /Git and Github Section -->
-    <div class="section" id="practiceMakesPerfect"> <!-- Practice Makes Perfect Section -->
-      <div class="section--img">
-       <img src="img/practiceMakesPerfect.jpg" alt="Practice Makes Perfect logo" style="width: 25%">
-         <h3></h3>
-      </div>
-      <ul class="section_list"><!--git and Github Section list -->
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://www.hackerrank.com/" class="link">HackerRank</a>
-            <p class="link--description">A technology hiring platform that is the standard for assessing developer skills for over 1,000 companies around the world.
-          </div>
-          <div class="link--notes">
-            <p>Good resource to actually start practice algorithms and various concepts. Many companies use this platform for testing in the interview process. It is nice because it has "tracks" that allow you to hone and develop skills around various core CS concepts. I like the interface and the ability to focus the challenges on specific skill sets. (Ross Davis)</p>
-          </div>
-        </li>
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://www.codecademy.com/" class="link">codeAcademy</a>
-            <p class="link--description">Great interactive online learning resource for most of the major languages in modern software.
-          </div>
-          <div class="link--notes">
-            <p>Great interactive online learning resource for most of the major languages in modern software.</p>
-          </div>
-        </li>
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://www.w3schools.com/" class="link">w3schools.com</a>
-            <p class="link--description">Staight forward tutorials, references and examples to help people learn CS languages for buidling web pages and other programs.
-          </div>
-          <div class="link--notes">
-            <p>Easy to use reference on all types of subjet matter. Its best used when you have a specific question on types of programs.</p>
-          </div>
-        </li>
-        <div class="section_list--img">
-          <img src="img/calvin&hobbes.jpeg" alt="Calvin and Hobbes Cartoon" style="width: 100%">
-            <div class="section_list--img--text">
-              <h5>Calvin & Hobbes thoughts on practicing</h5>
-            </div> <!--/section-list--img--text-->
-        </div> <!--/section_list--img-->
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://codepen.io/" class="link">Codepen</a>
-            <p class="link--description">Write HTML, CSS, and JavaScript and get a real-time preview.
-          </div>
-          <div class="link--notes">
-            <p>This is regularly used in the world of programming, you should become familiar with this ASAP.</p>
-          </div>
-        </li>
-        <li class="section_list--item">
-          <div class="link--wrapper">
-            <a href="https://www.codewars.com/" class="link">Code Wars</a>
-            <p class="link--description">A fun "Game-ified" code challenge website, also the base of another platform that companies are starting to use for interview testing, good to be familiar with.
-          </div>
-          <div class="link--notes">
-            <p>For all you "Gamers", a more entertaining way to learn coding!</p>
-          </div>
-        </li>
-      </ul> <!-- /Practice Makes Perfect Section List-->
-    </div>  <!-- /Practice Makes Perfect Section -->
+
+
 
 
   </div>
