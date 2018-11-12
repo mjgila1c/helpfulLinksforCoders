@@ -113,6 +113,7 @@ h5 {
 } */
 
 .navbar {
+	z-index: 1;
   overflow: hidden;
 }
 
@@ -256,12 +257,13 @@ nav a:hover {
 }
 
 .section--img, img {
+		z-index: -1;
     margin-right: 10px;
 		border-radius: 5px;
 }
 
 .section_list--img {
-    vertical-align: middle;
+		vertical-align: middle;
     position: relative;
     max-width: 98%;
     margin: 0 auto;
@@ -277,6 +279,7 @@ nav a:hover {
   color: black;
   width: 75%;
   height: auto;
+	margin-top: 10px;
   border-radius:5px;
   padding-left: 65px;
 
