@@ -114,7 +114,7 @@ h5 {
 
 .navbar {
 	z-index: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 nav ul{
@@ -146,6 +146,10 @@ nav li:hover {
 nav a:hover {
 	color: purple;
 }
+
+nav a:visited {
+	color: red;
+}
 /* =====================================================
        Customized Bootstrap sytle
 ========================================================*/
@@ -154,7 +158,6 @@ nav a:hover {
   padding: 20px 0 20px 0;
 	background-color:  #eaf1f2;
   border-radius: 10px;
-  margin-top: 5rem;
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -177,27 +180,9 @@ nav a:hover {
 	padding-bottom: 1rem;
 }
 
-/********************************************************
-    Media Queries
-**********************************************************  */
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { .
+.navbar {
+	padding: .5rem 0 0 0;
 }
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
- }
-
-
 
 /********************************************************
     Custom Styles
@@ -339,16 +324,33 @@ nav a:hover {
 	}
 }
 
-@media (max-width: 992px ) {
+@media (max-width: 600px ) {
+.jumbotron {
+	margin-top: 175px;
+	}
+}
 
+@media (min-width: 604px ) {
+	.jumbotron {
+		margin-top: 125px;
+	}
+}
+
+@media (min-width: 706px ) {
+.jumbotron {
+	margin-top: 75px;
+	}
 }
 
 @media only screen and (min-width: 600px) {
-  .navbar li{
-    display: inline-block;
-    padding: 10px;
-		}
+	.navbar li{
+		display: inline-block;
+		padding: 10px;
+	}
 }
+
+
+
 
 /********************************************************
     Tablet/ Desktop

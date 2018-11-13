@@ -35,6 +35,7 @@ var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
   videoId: '0i3fUOtyKa8',
+  // this creates an autoplay and also removes the controls from the YT display
   playerVars: { 'autoplay': 1, 'controls': 0},
     events: {
       'onReady': onPlayerReady,
@@ -46,7 +47,7 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   event.target.playVideo();
 }
-
+// this fuction fades the buttons out and back in as the useer plays and replays the video
 function onPlayerStateChange(event) {
   if(event.data === 0){
     $("#player").fadeOut();
@@ -98,7 +99,7 @@ $('#nav-item').on('click', function(){
 //   Sticky Navbar Functions
 //*********************************************************
 
-// <script>
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -111,4 +112,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-// </script>
