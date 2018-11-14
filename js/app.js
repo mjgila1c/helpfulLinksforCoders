@@ -34,7 +34,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-  videoId: '0i3fUOtyKa8',
+  videoId: 'A-qZ2h3guuE',
   // this creates an autoplay and also removes the controls from the YT display
   playerVars: { 'autoplay': 1, 'controls': 0},
     events: {

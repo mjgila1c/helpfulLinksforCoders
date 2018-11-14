@@ -78,39 +78,12 @@ a:active {
    text-decoration: underline;
 }
 
-/*iframe {*/
-/*  float: none;*/
-/*  border-radius: 1.5em;*/
-/*}*/
-
-/*.container {*/
-/*    padding: 10px;*/
-/*    background: #fff;*/
-/*    border-radius: 5px;*/
-/*    margin: 45px auto;*/
-/*    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);*/
-/*}*/
-
 h5 {
     display: compact;
     font-size: 75%;
     font-family: "Sans-serif" arial,
 
 }
-
-
-/* .nav-navbar {
-	margin-top: 5px;
-}
-
-.nav-navbar a {
-	text-align: center;
-	display: block;
-	padding: 10px 15px;
-	font-size: .95em;
-	color: #3acec2;
-
-} */
 
 .navbar {
 	z-index: 1;
@@ -119,18 +92,25 @@ h5 {
 
 nav ul{
   width: 100%;
+	font-style: italic;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 	margin: 0;
   padding: 0;
 }
+
+nav ul li:first-child {
+	border-left: 2px solid black;
+}
+
 nav li{
   list-style-type: none;
   padding: 0;
   border-top: 1px solid #000;
+	border-right: 2px solid black;
 }
 nav a{
-  color: #e20943;
+  color: #ff471a;
 	font-weight: bold;
 	font-size: 20px;
   text-decoration: none;
@@ -149,6 +129,18 @@ nav a:hover {
 
 nav a:visited {
 	color: red;
+}
+
+footer{
+	display: flex;
+  background: rgba(55, 88, 111, 0.7);
+  color: white;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  padding: 20px;
+}
+footer a{
+  color: white;
 }
 /* =====================================================
        Customized Bootstrap sytle
@@ -183,6 +175,7 @@ nav a:visited {
 .navbar {
 	padding: .5rem 0 0 0;
 }
+
 
 /********************************************************
     Custom Styles
@@ -232,9 +225,6 @@ nav a:visited {
     padding-right: 15px;
 }
 
-.footer {
-    display: none;
-}
 
 .section--img {
     text-align: center;
@@ -275,6 +265,7 @@ nav a:visited {
 }
 /******************************************************
 /        Nav Bar sticky
+/      See app.js for Sticky Navbar Function
 /******************************************************/
 
 .sticky {
@@ -328,17 +319,42 @@ nav a:visited {
 .jumbotron {
 	margin-top: 175px;
 	}
+
 }
 
 @media (min-width: 604px ) {
 	.jumbotron {
 		margin-top: 125px;
 	}
+	nav li {
+		border-bottom: 2px solid black;
+	}
+
+	nav ul li:nth-child(5) {
+		border-top: 0;
+		border-left: 2px solid black;
+	}
+
+	nav ul li:hover {
+		text-transform: none;
+	}
+
+
+
+
 }
 
 @media (min-width: 706px ) {
 .jumbotron {
 	margin-top: 75px;
+	}
+	nav ul li:nth-child(5) {
+		border-top: 0;
+		border-left: none;
+	}
+
+	nav ul li:hover {
+		text-transform: uppercase;
 	}
 }
 
