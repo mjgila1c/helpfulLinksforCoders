@@ -38,17 +38,7 @@ row {
   flex-direction: column;
   justify-content: space-around;
 }
-footer ul{
-  display: flex;
-  list-style-type: none;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  box-sizing: none;
-}
-footer ul li:first-child {
-  width-min: 35%;
-  width-max: 55%;
-}
+
 
 /****************************************
 /     Navbar
