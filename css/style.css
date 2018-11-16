@@ -5,8 +5,8 @@
 ==================================== */
 
 body {
-	font-size: 1.35em;
-	font-family: 'Varela Round', sans-serif;
+  font-size: 1.35em;
+  font-family: 'Varela Round', sans-serif;
   background-image: url('../img/scrolling_HTML_code.png');
 
 }
@@ -33,7 +33,7 @@ h4 {
 h3 {
     color: blue;
     font-size: 1.50rem;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0px 10px;
 
 }
 
@@ -86,10 +86,10 @@ h5 {
 
 nav ul{
   width: 100%;
-	font-style: italic;
+  font-style: italic;
   text-align: center;
   background: rgba(0, 0, 0, 0.8);
-	margin: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -105,11 +105,11 @@ nav li{
 }
 nav a{
   color: #ff471a;
-	font-weight: bold;
-	font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
   display: block;
-	margin: 0;
+  margin: 0;
 }
 
 nav li:hover {
@@ -223,7 +223,7 @@ nav a:visited {
 .section--img {
     padding-top: 20px;
     padding-bottom: 30px;
- }
+}
  
 .section--img, img {
     max-height: 560px;
@@ -248,17 +248,17 @@ nav a:visited {
 
 .section--img {
     text-align: center;
-    padding: 60px 0 20px 0;
+    padding: 40px 0 20px 0;
 }
 
 .section--img, img {
-		z-index: -1;
+	z-index: -1;
     margin-right: 10px;
-		border-radius: 5px;
+	border-radius: 5px;
 }
 
 .section_list--img {
-		vertical-align: middle;
+	vertical-align: middle;
     position: relative;
     max-width: 98%;
     margin: 0 auto;
