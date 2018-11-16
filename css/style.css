@@ -224,6 +224,10 @@ nav a:visited {
     padding-top: 20px;
     padding-bottom: 30px;
  }
+ 
+.section--img, img {
+    max-height: 560px;
+}
 
 .link--notes {
     font-style: italic;
