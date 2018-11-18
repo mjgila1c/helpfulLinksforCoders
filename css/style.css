@@ -103,6 +103,7 @@ nav li{
   border-top: 1px solid #000;
  border-right: 2px solid black;
 }
+
 nav a{
   color: #ff471a;
   font-weight: bold;
@@ -150,8 +151,7 @@ nav a:visited {
 
 .footer_list--item2 {
   height: 65px;
-  padding-right: 50px;
-}
+ }
 
 .footer li img {
   min-width: 2.5rem;
