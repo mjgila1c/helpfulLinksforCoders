@@ -87,16 +87,7 @@ $('#YTmutebutton').on('click', function() {
 });
 
 //********************************************************************
-//    nav link Functions
-//********************************************************************
-
-$('#nav-item').on('click', function(){
-        $("#navbar-expand").collapse();
-        // $(".nav.navbar-expand-md").removeClass("active");
-    });
-
-//********************************************************************
-//   Sticky Navbar Functions
+//   Sticky Navbar Function
 //*********************************************************
 
 
@@ -113,14 +104,14 @@ function myFunction() {
   }
 }
 
-//*****************************************************************************
-//                Facebook Like Button
-//*****************************************************************************/
+//***************************************************************************
+//         Facebook Like code
+//***************************************************************************
 
- (function(d, s, id) {
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
   fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+}(document, 'script', 'facebook-jssdk'));
