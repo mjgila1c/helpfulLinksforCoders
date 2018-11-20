@@ -37,7 +37,7 @@ others on learning new technics and even learning in a game type of formate.</p>
 to contribute or offer any advice you may have. Thanks!</p>
 
 
-**Side Note: I'm interested in upgrading this site to where people can add content to the site (once reviewed).  For example, I like people to either add comments to current likes of what they thought of the site / platform, or to be able to add additional links with a description and comments of their own. Unfortunately I current don’t have the skill set for this goal… yet!! That being said, if anyone would like to contribute to this site with either their own links to websites or an upgraded code please feel free to do so! Thanks!!**
+**Side Note: I'm interested in upgrading this site to where people can add content to the site (once reviewed).  For example, I like people to either add comments to current links / platform, or to be able to add additional links with a description and comments of their own. Unfortunately I current don’t have the skill set for this goal… yet!! That being said, if anyone would like to contribute to this site with either their own links to websites or an upgraded code please feel free to do so! Thanks!!**
 
 
 
