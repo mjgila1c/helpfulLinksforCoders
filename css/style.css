@@ -130,7 +130,7 @@ nav a:visited {
   background:  rgba(0, 0, 0, 0.6);
   width: 100%;
   padding: 0 0 0 0;
-  border-top-left-radius: 8px;  
+  border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
@@ -224,7 +224,7 @@ nav a:visited {
     padding-top: 20px;
     padding-bottom: 30px;
 }
- 
+
 .section--img, img {
     max-height: 560px;
 }
@@ -253,7 +253,6 @@ nav a:visited {
 
 .section--img, img {
 	z-index: -1;
-    margin-right: 10px;
 	border-radius: 5px;
 }
 
@@ -282,6 +281,16 @@ nav a:visited {
 
 .container {
     display: flex;
+}
+
+#githubLogoImg:hover {
+  border-radius: 33px;
+  background: white;
+}
+
+#linkedinLogoImg:hover {
+  border-radius: 15px;
+  background: white;
 }
 /******************************************************
 /        Nav Bar sticky
@@ -358,9 +367,6 @@ nav a:visited {
 	nav ul li:hover {
 		text-transform: none;
 	}
-
-
-
 
 }
 
