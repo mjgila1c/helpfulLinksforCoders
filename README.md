@@ -40,7 +40,24 @@ to contribute or offer any advice you may have. Thanks!</p>
 **Side Note: I'm interested in upgrading this site to where people can add content to the site (once reviewed).  For example, I like people to either add comments to current links / platform, or to be able to add additional links with a description and comments of their own. Unfortunately I current don’t have the skill set for this goal… yet!! That being said, if anyone would like to contribute to this site with either their own links to websites or an upgraded code please feel free to do so! Thanks!!**
 
 
-## LICENCE
-HTML, JavaScript and CSS are accessed through MIT licence
+## License
+Helpful Links for Coders is &copy 2018 per MIT licencse but is open source and I'm happy to have people contribute
+
+## Contributing
+
+I look forward to future pull requests from everyone. 
+
+Here are some ways you can contribute:
+
+* by using alpha, beta, and prerelease versions
+* by reporting bugs
+by suggesting new features
+by writing or editing documentation
+by writing specifications
+by writing code ( no patch is too small : fix typos, add comments, clean up inconsistent whitespace )
+by refactoring code
+by closing issues
+by reviewing patches
+
 
 
