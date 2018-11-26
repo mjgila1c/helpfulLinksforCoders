@@ -42,11 +42,11 @@ to contribute or offer any advice you may have. Thanks!</p>
 
 
 ## License
-Helpful Links for Coders is &copy 2018 per MIT licencse but is open source and I'm happy to have people contribute
+Helpful Links for Coders is :copyright:2018 per MIT license but is open source and I'm happy to have people contribute
 
 ## Contributing
 
-I look forward to future pull requests from everyone.
+I look forward to future pull requests from everyone. :smiley:
 
 Here are some ways you can contribute:
 
