@@ -61,8 +61,8 @@ Here are some ways you can contribute:
 * by reviewing patches
 
 ## Submitting a Pull Request
-1.) Fork the official repository.
-2.) Create a topic branch.
-3.) Implement your feature or bug fix.
-4.) Add, commit, and push your changes.
-5.) Submit a pull request.
+1. Fork the official repository.
+2. Create a topic branch.
+3. Implement your feature or bug fix.
+4. Add, commit, and push your changes.
+5. Submit a pull request.
