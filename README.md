@@ -21,16 +21,16 @@ from other in the IT community to help you learn. I'd recommend website <a href=
 
 <p>On this site I've created four catagories of information. All linked references have my comments or someone elses of what they thought of it and why they think its usful.</p>
 
-1) ![Childrens letter blocks stacked, A B and C](/img/abcBlocks.png)<p>**ABCs of Coding:** The fundmental "buidling blocks" of Coding... at least some of the things I found
+1) ![Childrens letter blocks stacked, A B and C](/img/abcBlocks.png | width=15)<p>**ABCs of Coding:** The fundmental "buidling blocks" of Coding... at least some of the things I found
 fundmental.</p>
 
-2) ![Globe with graduation cermonial hat and books]("../img/learning-paths.png")<p>**Learning Pathways:** These are more indepth programs that can teach you from A to Z++ about
+2) ![Globe with graduation cermonial hat and books](/img/learning-paths.png | width=15)<p>**Learning Pathways:** These are more indepth programs that can teach you from A to Z++ about
 the computer language platform you are interested in or the career path you're wanting to pursue.</p>
 
-3) ![Git and Github Logos]("../img/github.png")<p>**Git and Github** A breakdown of what Git and Github is about and why it's important. There are several links to explanations
+3) ![Git and Github Logos](/img/github.png | width=15)<p>**Git and Github** A breakdown of what Git and Github is about and why it's important. There are several links to explanations
 on how to use Git and Github to start buiding websites and code while conversing or working with others easily.</p>
 
-4) ![Sticky note "Practice Makes Perfect"]("../img/practiceMakesPerfect.png")<p>**Practice Makes Perfect** A list of sites and programs to help you refine your skills, work with
+4) ![Sticky note "Practice Makes Perfect"](/img/practiceMakesPerfect.png | width=15)<p>**Practice Makes Perfect** A list of sites and programs to help you refine your skills, work with
 others on learning new technics and even learning in a game type of formate.</p>
 
 <p>This was supposed to be a simple project but as I got into the programming and learning from my mistakes it became pretty complex ... at least for me anyway. Please feel free
