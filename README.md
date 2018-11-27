@@ -21,7 +21,7 @@ from other in the IT community to help you learn. I'd recommend website <a href=
 
 <p>On this site I've created four catagories of information. All linked references have my comments or someone elses of what they thought of it and why they think its usful.</p>
 
-1) ![Childrens letter blocks stacked, A B and C]("../img/abcBlocks.png")<p>**ABCs of Coding:** The fundmental "buidling blocks" of Coding... at least some of the things I found
+1) ![Childrens letter blocks stacked, A B and C](/img/abcBlocks.png)<p>**ABCs of Coding:** The fundmental "buidling blocks" of Coding... at least some of the things I found
 fundmental.</p>
 
 2) ![Globe with graduation cermonial hat and books]("../img/learning-paths.png")<p>**Learning Pathways:** These are more indepth programs that can teach you from A to Z++ about
