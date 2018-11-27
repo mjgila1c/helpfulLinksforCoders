@@ -41,12 +41,12 @@ to contribute or offer any advice you may have. Thanks!</p>
   I'm interested in upgrading this site to where people can add content to the site and for it to evolve into more of a blog type of community.  For example, I like people to either add comments to current links / platform, or to be able to add additional links with a description and comments of their own. Unfortunately I current don’t have the skill set for this goal… **yet!!** That being said, if anyone would like to contribute to this site with either their own links to websites or an upgraded code please feel free to do so! Thanks!!
 
 ##### Upgrades Hopefully To Be Achieved:
-    - [] Expand site into multiple pages and subject titles as required
-    - [] Allow users to add additional content \(links to websites, repos..etc.\)
-    - [] Allow users to add comments to existing content. This would need to be a drop down options
-    - [] Allow user to add videos of what their thoughts are about specific content, like websites or other references
-    - [] Build a site that does actually help newbie coders and develops due to open source contributions and followings / stars on GitHub
-    - [] Make it a fun site / blog for people to interact and learn from one another!
+- [ ] Expand site into multiple pages and subject titles as required
+- [ ] Allow users to add additional content \(links to websites, repos..etc.\)
+- [ ] Allow users to add comments to existing content. This would need to be a drop down options
+- [ ] Allow user to add videos of what their thoughts are about specific content, like websites or other references
+- [ ] Build a site that does actually help newbie coders and develops due to open source contributions and followings / stars on GitHub
+- [ ] Make it a fun site / blog for people to interact and learn from one another!
 
 
 ## License
