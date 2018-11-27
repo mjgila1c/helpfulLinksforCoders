@@ -21,10 +21,10 @@ from other in the IT community to help you learn. I'd recommend website <a href=
 
 <p>On this site I've created four catagories of information. All linked references have my comments or someone elses of what they thought of it and why they think its usful.</p>
 
-1) ![Childrens letter blocks stacked, A B and C](/img/abcBlocks.png \| width=15px)<p>**ABCs of Coding:** The fundmental "buidling blocks" of Coding... at least some of the things I found
+1) ![Childrens letter blocks stacked, A B and C][[/img/abcBlocks.png \| width=15px]]<p>**ABCs of Coding:** The fundmental "buidling blocks" of Coding... at least some of the things I found
 fundmental.</p>
 
-2) ![Globe with graduation cermonial hat and books](/img/learning-paths.png {width=15px})<p>**Learning Pathways:** These are more indepth programs that can teach you from A to Z++ about
+2) <img src="img/learning-paths.png" width=15px><p>**Learning Pathways:** These are more indepth programs that can teach you from A to Z++ about
 the computer language platform you are interested in or the career path you're wanting to pursue.</p>
 
 3) ![Git and Github Logos](/img/github.png {width=15px})<p>**Git and Github** A breakdown of what Git and Github is about and why it's important. There are several links to explanations
