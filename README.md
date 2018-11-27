@@ -27,7 +27,7 @@ fundmental.</p>
 2) <img src="img/learning-paths.png" width=75px><p>**Learning Pathways:** These are more indepth programs that can teach you from A to Z++ about
 the computer language platform you are interested in or the career path you're wanting to pursue.</p>
 
-3) <img src="img/github.png" width=75px><p>**Git and Github** A breakdown of what Git and Github is about and why it's important. There are several links to explanations
+3) <img src="img/gitLog.png" width=75px> & <img src="img/github.png" width=75px><p>**Git and Github** A breakdown of what Git and Github is about and why it's important. There are several links to explanations
 on how to use Git and Github to start buiding websites and code while conversing or working with others easily.</p>
 
 4) <img src="img/practiceMakesPerfect.png" width=75px><p>**Practice Makes Perfect** A list of sites and programs to help you refine your skills, work with
