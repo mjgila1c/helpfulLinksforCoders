@@ -27,7 +27,7 @@ from other in the IT community to help you learn. I'd recommend website [Slack](
 2. <img src="img/learning-paths.png" width=95px>
 **Learning Pathways:** These are more in-depth programs that can teach you from A to Z++ about the computer language platform you are interested in or the career path you're wanting to pursue.
 <!-- added <img src=".."> format to images so I could control the img size -->
-3. <img src="img/gitLog.png" width=75px> <img src="img/github.png" width=75px>
+3. <img src="img/gitLog.png" width=75px> <img src="img/github.png" width=75px><br>
 **Git and Github** A breakdown of what Git and Github is about and why it's important. There are several links to explanations on how to use Git and Github to start building websites and code while conversing or working with others easily.
   <!-- added <img src=".."> format to images so I could control the img size -->
 4. <img src="img/practiceMakesPerfect.png" width=95px>
