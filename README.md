@@ -31,10 +31,7 @@ from other in the IT community to help you learn. I'd recommend website [Slack](
 <p><strong>Git and Github</strong> A breakdown of what Git and Github is about and why it's important. There are several links to explanations on how to use Git and Github to start building websites and code while conversing or working with others easily.</p>
   <!-- added <img src=".."> format to images so I could control the img size -->
 4. <img src="img/practiceMakesPerfect.png" width=95px>
-**Practice Makes Perfect** A list of sites and programs to help you refine your skills, work withothers on learning new technics and even learning in a game type of format.
-
- This was supposed to be a simple project but as I got into the programming and learning from my mistakes it became pretty complex \(at least for me anyway\). Please feel free
-to contribute or offer any advice you may have. Thanks!
+**Practice Makes Perfect** A list of sites and programs to help you refine your skills, work with others on learning new technics and even learning in a game type of format. This was supposed to be a simple project but as I got into the programming and learning from my mistakes it became pretty complex \(at least for me anyway\). Please feel free to contribute or offer any advice you may have. Thanks!
 
 
 ## Website Future Upgrade Goals:
