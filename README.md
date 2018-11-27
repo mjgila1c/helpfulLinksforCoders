@@ -45,7 +45,7 @@ to contribute or offer any advice you may have. Thanks!</p>
 - [ ] Allow users to add additional content \(links to websites, repos..etc.\)
 - [ ] Allow users to add comments to existing content. This would need to be a drop down options
 - [ ] Allow user to add videos of what their thoughts are about specific content, like websites or other references
-- [ ] Build a site that does actually help newbie coders and develops due to open source contributions and followings / stars on GitHub
+- [ ] Build a site that does actually help newbie coders and developers due to open source contributions and followings / stars on GitHub
 - [ ] Make it a fun site / blog for people to interact and learn from one another!
 
 
