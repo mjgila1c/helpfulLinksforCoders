@@ -1,9 +1,6 @@
 # **Helpful Links for Coders**
 
-## Code Louisville Front-End Developer Project
-
-
-### Helpful repos, links, blogs and other training platforms to help learn to code. </h3>
+## Helpful repos, links, blogs and other training platforms to help learn to code. </h3>
 
 I created this repo to help me and any others interested to remember useful links and other information on how to learn how to code.
 
